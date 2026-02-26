@@ -5,43 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etiquetas HTML</title>
-    <link href="../bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
-    <link rel="stylesheet" href="/Estilos/style.css">
-    <link rel="stylesheet" href="/Funciones/">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html" style="font-size: 20px;">Inicio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./Paginas/texto.html" style="font-size: 15px; font-family: Comic Sans; font-family: Comic Sans;">Texto y
-                            Contenido</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./Paginas/listas.html" style="font-size: 15px; font-family: Comic Sans;">Listas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./Paginas/formularios.html" style="font-size: 15px; font-family: Comic Sans;">Formularios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./Paginas/tablas.html" style="font-size: 15px; font-family: Comic Sans;">Tablas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./Paginas/multimedia.html" style="font-size: 15px; font-family: Comic Sans;">Multimedia</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../Estilos/style.css">
+    <link rel="stylesheet" href="../Funciones/funciones.css">
+    <div id="navbar-container"></div>
 </head>
 
 <body>
-    
+    <script>
+        fetch('../Funciones/navbar-apartados.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+    </script>
 </body>
 
 </html>
