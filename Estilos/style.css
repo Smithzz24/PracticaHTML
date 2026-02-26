@@ -94,6 +94,8 @@ a {
     color: #007acc;
     margin-bottom: 20px;
     text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 .introduccion {
     text-align: center;
@@ -196,6 +198,13 @@ h4 {
     border-radius: 6px;
     transition: all 0.3s ease;
 }
+
+.texto{
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: justify;
+}
+
 /* ===== FOOTER GENERAL ===== */
 
 .footer {
