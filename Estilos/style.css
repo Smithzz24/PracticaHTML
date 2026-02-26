@@ -1,11 +1,43 @@
-.content{
+header{
+    background-color: #007acc;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+body {
+    background-color: #f0f8ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1c1818;
+}
+
+.contentIndex {
+    margin: 20px;
+    padding-left: 100px;
+    display: flex;
+    height: 100%;
+}
+
+.content {
     margin: 40px;
 }
 
-.codigo {
-    flex: content;
-    width: fit-content;
+
+.ejemplo {
+    display: flex;
     height: fit-content;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.informacion {
+    flex: 8;
+    padding-right: 20px;
+}
+
+.codigo {
+    flex: 6;
     background-color: #1e1e1e;
     padding: 20px;
     border-radius: 8px;
@@ -13,24 +45,81 @@
     font-size: 20px;
     color: #d4d4d4;
     overflow-x: auto;
+    margin-right: 20px;
 }
 
+.resultado {
+    flex: 4;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.resultadoTitulo {
+    margin-top: -60px;
+}
+
+.titulos {
+    font-size: 60px;
+    font-weight: bold;
+    align-self: center;
+    color: #007acc;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.textoEspecial {
+    font-size: 28px;
+    line-height: 1.6;
+    color: #c40505;
+    font-weight: bold;
+}
+
+.textoIndex {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.semititulos {
+    font-size: 30px;
+    font-weight: bold;
+    color: #007acc;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.introduccion {
+    text-align: center;
+    font-weight: 350;
+}
+
+#textoInformativo {
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: initial;
+    font-size: 15px;
+}
+
+
 .tag {
-    color: #569CD6; /* azul etiquetas */
+    color: #569CD6;
 }
 
 .attr {
-    color: #9CDCFE; /* azul claro atributos */
+    color: #9CDCFE;
 }
 
 .value {
-    color: #CE9178; /* naranja valores */
+    color: #CE9178;
 }
 
 #NavbarCustom {
-    font-size: 20px; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-    padding-left: 15px; 
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 15px;
     padding-right: 15px;
 }
 
@@ -54,4 +143,134 @@
     padding: 20px;
     border-radius: 10px;
     text-align: left;
+}
+
+h4 {
+    color: #007acc;
+    margin-bottom: 15px; text-align: center;
+}
+.tipos{ 
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    height: fit-content;
+}
+
+.aside {
+    flex: 2;
+    width: 250px;
+    padding: 20px;
+    background-color: #abd9ff;
+    top: 20px;
+    height: fit-content;
+}
+.aside h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #0d6efd;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aside ul li {
+    margin-bottom: 8px;
+}
+
+.aside ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    padding: 6px 10px;
+    display: block;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+/* ===== FOOTER GENERAL ===== */
+
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Columnas principales */
+.footer-col {
+    flex: 1;
+}
+
+/* Separadores verticales */
+.footer-col:not(:last-child) {
+    border-right: 1px solid rgba(255,255,255,0.3);
+    padding-right: 30px;
+}
+
+/* ===== COLUMNA 1 ===== */
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 120px;
+}
+
+.footer-title {
+    margin: 0;
+    color: #004ecc;
+}
+
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.fila-full {
+    margin-top: 5px;
+}
+
+.fila-center {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+/* ===== COLUMNA 3 ===== */
+
+.footer-right h4 {
+    margin-bottom: 10px;
+}
+
+.footer-right p {
+    margin: 5px 0;
 }
