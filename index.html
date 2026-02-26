@@ -21,7 +21,12 @@
                 Cada etiqueta tiene un propósito específico y se utiliza para definir diferentes partes del contenido.
             </p>
             <br>
-            <p class="textoIndex">Para crear una etiqueta de abre con un Menor que (<span class="textoEspecial"><</span>) y se pone la etiequeta deseada.Posteriormente se ponen todos los atributos e identificadores necesarios. Luego se cierra con un Mayor que (<span class="textoEspecial">></span>) . Con esto la etiqueta queda creada, luego se pone el contenido dentro de este, texto, imagenes o todo lo que sea necesario. Para cerrar la etiqueta luego del contenido se abre con un slash (<span class="textoEspecial">/</span>) seguido de la etiqueta de apertura. Es decir, se usa la misma etiqueta puesta antes.</p>
+            <p class="textoIndex">Para crear una etiqueta de abre con un Menor que (<span class="textoEspecial"><</span>) y se pone la etiequeta deseada.Posteriormente se ponen todos los atributos e
+                        identificadores necesarios. Luego se cierra con un Mayor que (<span
+                            class="textoEspecial">></span>) . Con esto la etiqueta queda creada, luego se pone el
+                        contenido dentro de este, texto, imagenes o todo lo que sea necesario. Para cerrar la etiqueta
+                        luego del contenido se abre con un slash (<span class="textoEspecial">/</span>) seguido de la
+                        etiqueta de apertura. Es decir, se usa la misma etiqueta puesta antes.</p>
             <h3 id="ejemplo">Ejemplo de etiquetas HTML:</h3>
             <div class="ejemplo">
                 <section class="codigo">
@@ -183,14 +188,15 @@
             </section>
         </section>
     </div>
-    <script>
-        fetch('Funciones/navbar-index.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar-container').innerHTML = data;
-            });
-    </script>
 </body>
+
+<script>
+    fetch('Funciones/navbar-index.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-container').innerHTML = data;
+        });
+</script>
 <script>
     fetch('Funciones/footer.html')
         .then(response => response.text())

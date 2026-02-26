@@ -14,14 +14,15 @@
 
 <body>
 
-    <script>
-        fetch('../Funciones/navbar-apartados.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar-container').innerHTML = data;
-            });
-    </script>
 </body>
+
+<script>
+    fetch('../Funciones/navbar-apartados.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-container').innerHTML = data;
+        });
+</script>
 <script>
     fetch('../Funciones/footer.html')
         .then(response => response.text())
@@ -30,4 +31,5 @@
         });
 </script>
 <div id="footer-container"></div>
+
 </html>
