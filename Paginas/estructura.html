@@ -13,6 +13,105 @@
 </head>
 
 <body>
+    <div class="contentIndex">
+        <section class="informacion">
+            <div class="contenedor-semantica">
+
+                <h1 class="titulo-principal">Etiquetas de Estructura Semántica en HTML</h1>
+
+                <p class="descripcion-principal" id="descripcion">
+                    Las etiquetas semánticas permiten estructurar el contenido de una página web
+                    dando significado a cada sección, mejorando la accesibilidad y el SEO.
+                </p>
+
+                <div class="grid-semantica">
+
+                    <div class="item-semantica" id="header">
+                        <h3>&lt;header&gt;</h3>
+                        <img src="https://via.placeholder.com/400x200?text=Header" alt="Ejemplo Header">
+                        <p>Representa la cabecera de una página o sección.</p>
+                    </div>
+
+                    <div class="item-semantica" id="nav">
+                        <h3>&lt;nav&gt;</h3>
+                        <img src="https://via.placeholder.com/400x200?text=Nav" alt="Ejemplo Nav">
+                        <p>Define una sección de navegación con enlaces.</p>
+                    </div>
+
+                    <div class="item-semantica" id="main">
+                        <h3>&lt;main&gt;</h3>
+                        <img src="https://via.placeholder.com/400x200?text=Main" alt="Ejemplo Main">
+                        <p>Contiene el contenido principal del documento.</p>
+                    </div>
+
+                    <div class="item-semantica" id="section">
+                        <h3>&lt;section&gt;</h3>
+                        <img src="https://via.placeholder.com/400x200?text=Section" alt="Ejemplo Section">
+                        <p>Representa una sección temática dentro de la página.</p>
+                    </div>
+
+                    <div class="item-semantica" id="article">
+                        <h3>&lt;article&gt;</h3>
+                        <img src="https://via.placeholder.com/400x200?text=Article" alt="Ejemplo Article">
+                        <p>Contenido independiente como noticias o publicaciones.</p>
+                    </div>
+
+                    <div class="item-semantica" id="aside">
+                        <h3>&lt;aside&gt;</h3>
+                        <img src="https://via.placeholder.com/400x200?text=Aside" alt="Ejemplo Aside">
+                        <p>Contenido secundario como barras laterales.</p>
+                    </div>
+
+                    <div class="item-semantica" id="footer">
+                        <h3>&lt;footer&gt;</h3>
+                        <img src="https://via.placeholder.com/400x200?text=Footer" alt="Ejemplo Footer">
+                        <p>Pie de página con información adicional.</p>
+                    </div>
+
+                    <div class="item-semantica" id="figure">
+                        <h3>&lt;figure&gt; y &lt;figcaption&gt;</h3>
+                        <img src="https://via.placeholder.com/400x200?text=Figure+Figcaption" alt="Ejemplo Figure">
+                        <p>Agrupa contenido multimedia con su descripción.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="aside">
+            <h5>Navegación</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#descripcion">Descripcion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#header">Header</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#nav">Nav</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#main">Main</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section">Section</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#article">Article</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aside">Aside</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">Footer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#figure">Figure</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <div id="footer-container"></div>
 
 </body>
 
@@ -23,6 +122,7 @@
             document.getElementById('navbar-container').innerHTML = data;
         });
 </script>
+
 <script>
     fetch('../Funciones/footer.html')
         .then(response => response.text())
@@ -30,6 +130,5 @@
             document.getElementById('footer-container').innerHTML = data;
         });
 </script>
-<div id="footer-container"></div>
 
 </html>
