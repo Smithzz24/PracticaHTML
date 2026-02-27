@@ -36,25 +36,26 @@
                 <div class="col" id="formulario1">
                     <form>
                         <div class="mb-3">
-                            <label for="exampleInputUser1" class="form-label">Username</label>
+                            <label for="exampleInputUser1" class="form-label">Usuario</label>
                             <input type="text" class="form-control" id="exampleInputUser1"
                                 placeholder="Enter your username">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <label for="exampleInputEmail1" class="form-label">Correo Elecronico</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp" placeholder="Enter your email">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                            <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie
+                                más.
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                             <input type="password" class="form-control" id="exampleInputPassword1"
                                 placeholder="Enter your password">
                         </div>
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            <label class="form-check-label" for="exampleCheck1">Presioname</label>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                         <button type="submit" class="btn btn-secondary">Submit</button>
@@ -70,6 +71,20 @@
                             <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             <br>
+                            <select class="form-select">
+                                <option>Opción 1</option>
+                                <option>Opción 2</option>
+                            </select>
+                            <br>
+                            <input type="checkbox" id="check1"> <label for="check1"
+                                style="padding-right: 50px;">Aceptar</label>
+                            <input type="checkbox" id="check2"> <label for="check2">Rechazar</label>
+                            <br>
+                            <input type="radio" name="gender" value="M"><label for="gender1"
+                                style="padding-right: 37px; margin-top: 15px;"> Masculino</label>
+                            <input type="radio" name="gender" value="F"><label for="gender2"> Femenino</label>
+                            <br>
+                            <div style="margin-top: 20px;"></div>
                             <button type="button" class="btn btn-outline-warning">Warning</button>
                             <button type="button" class="btn btn-outline-info">Info</button>
                             <button type="button" class="btn btn-outline-light">Light</button>
@@ -80,6 +95,131 @@
             </div>
         </div>
     </div>
+    <br><br><br>
+
+    <section class="pad150" style="padding-left: 150px; padding-right: 150px; font-size: 14px;">
+        <div class="accordion" id="accordionForms">
+            <!-- texto input -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingText">
+                    <button class="accordion-button collapsed" style="font-size: 17px;" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseText" aria-expanded="false" aria-controls="collapseText">
+                        Campos de texto
+                    </button>
+                </h2>
+                <div id="collapseText" class="accordion-collapse collapse" aria-labelledby="headingText"
+                    data-bs-parent="#accordionForms">
+                    <div class="accordion-body">
+                        <p>Usa <code>&lt;input type=&quot;text&quot;&gt;</code> para texto corto.</p>
+                        <pre><code>&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Ingrese texto&quot;&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+            <!-- email input -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEmail">
+                    <button class="accordion-button collapsed" style="font-size: 17px;"  type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEmail" aria-expanded="false" aria-controls="collapseEmail">
+                        Campo de correo electrónico
+                    </button>
+                </h2>
+                <div id="collapseEmail" class="accordion-collapse collapse" aria-labelledby="headingEmail"
+                    data-bs-parent="#accordionForms">
+                    <div class="accordion-body">
+                        <p>El tipo <code>email</code> valida automáticamente el formato.</p>
+                        <pre><code>&lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;user@example.com&quot;&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+            <!-- password -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingPassword">
+                    <button class="accordion-button collapsed" style="font-size: 17px;"  type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsePassword" aria-expanded="false" aria-controls="collapsePassword">
+                        Campo de contraseña
+                    </button>
+                </h2>
+                <div id="collapsePassword" class="accordion-collapse collapse" aria-labelledby="headingPassword"
+                    data-bs-parent="#accordionForms">
+                    <div class="accordion-body">
+                        <p>Usa <code>type=&quot;password&quot;</code> para ocultar el texto.</p>
+                        <pre><code>&lt;input type=&quot;password&quot; class=&quot;form-control&quot; placeholder=&quot;Contraseña&quot;&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+            <!-- checkbox and radio -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingChecks">
+                    <button class="accordion-button collapsed" style="font-size: 17px;"  type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseChecks" aria-expanded="false" aria-controls="collapseChecks">
+                        Casillas y radios
+                    </button>
+                </h2>
+                <div id="collapseChecks" class="accordion-collapse collapse" aria-labelledby="headingChecks"
+                    data-bs-parent="#accordionForms">
+                    <div class="accordion-body">
+                        <p>Usa <code>&lt;input type=&quot;checkbox&quot;&gt;</code> o <code>radio</code> para opciones.
+                        </p>
+                        <pre><code>&lt;input type=&quot;checkbox&quot; id=&quot;check1&quot;&gt; &lt;label for=&quot;check1&quot;&gt;Aceptar&lt;/label&gt;
+&lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;M&quot;&gt; Masculino</code></pre>
+                    </div>
+                </div>
+            </div>
+            <!-- select -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSelect">
+                    <button class="accordion-button collapsed" style="font-size: 17px;"  type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSelect" aria-expanded="false" aria-controls="collapseSelect">
+                        Menú desplegable (select)
+                    </button>
+                </h2>
+                <div id="collapseSelect" class="accordion-collapse collapse" aria-labelledby="headingSelect"
+                    data-bs-parent="#accordionForms">
+                    <div class="accordion-body">
+                        <p>Etiqueta <code>&lt;select&gt;</code> con opciones <code>&lt;option&gt;</code>.</p>
+                        <pre><code>&lt;select class=&quot;form-select&quot;&gt;
+  &lt;option&gt;Opción 1&lt;/option&gt;
+  &lt;option&gt;Opción 2&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+            <!-- textarea -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTextarea">
+                    <button class="accordion-button collapsed" style="font-size: 17px;"  type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTextarea" aria-expanded="false" aria-controls="collapseTextarea">
+                        Área de texto
+                    </button>
+                </h2>
+                <div id="collapseTextarea" class="accordion-collapse collapse" aria-labelledby="headingTextarea"
+                    data-bs-parent="#accordionForms">
+                    <div class="accordion-body">
+                        <p>Usa <code>&lt;textarea&gt;</code> para textos largos o comentarios.</p>
+                        <pre><code>&lt;textarea class=&quot;form-control&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+            <!-- botones -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingButtons">
+                    <button class="accordion-button collapsed" style="font-size: 17px;" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseButtons" aria-expanded="false" aria-controls="collapseButtons">
+                        Botones de envío y acción
+                    </button>
+                </h2>
+                <div id="collapseButtons" class="accordion-collapse collapse" aria-labelledby="headingButtons"
+                    data-bs-parent="#accordionForms">
+                    <div class="accordion-body">
+                        <p>El botón <code>type=&quot;submit&quot;</code> envía el formulario; otros tipos son
+                            <code>button</code> y <code>reset</code>.
+                        </p>
+                        <pre><code>&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Enviar&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <br><br><br>
 </body>
 
