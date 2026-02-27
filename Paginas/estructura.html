@@ -20,62 +20,220 @@
                 <h1 class="titulo-principal">Etiquetas de Estructura Semántica en HTML</h1>
 
                 <p class="descripcion-principal" id="descripcion">
-                    Las etiquetas semánticas permiten estructurar el contenido de una página web
-                    dando significado a cada sección, mejorando la accesibilidad y el SEO.
+                    Normalmente una página web o aplicación web está dividida en diferentes áreas visuales
+                    para poder mejorar la experiencia del usuario y su interactividad.
+                    Las palabras clave que representan cada elemento nuevo de HTML5
+                    están relacionadas a estas áreas visuales.
                 </p>
+
+                <hr>
+
+                <img src="http://www.edu4java.com/_img/web/estructuraBody.png" alt="Estrucura Semántica"
+                    class="img-semantica">
 
                 <div class="grid-semantica">
 
                     <div class="item-semantica" id="header">
-                        <h3>&lt;header&gt;</h3>
-                        <img src="https://via.placeholder.com/400x200?text=Header" alt="Ejemplo Header">
-                        <p>Representa la cabecera de una página o sección.</p>
+                        <h2>&lt;header&gt;</h2>
+                        <p class="descripcion-tipo">Representa la cabecera de una página o sección.</p>
+                        <img src="http://www.edu4java.com/_img/web-en/bodyStructureHeader.png" alt="Ejemplo Header">
                     </div>
 
                     <div class="item-semantica" id="nav">
-                        <h3>&lt;nav&gt;</h3>
-                        <img src="https://via.placeholder.com/400x200?text=Nav" alt="Ejemplo Nav">
-                        <p>Define una sección de navegación con enlaces.</p>
+                        <h2>&lt;nav&gt;</h2>
+                        <p class="descripcion-tipo">Define una sección de navegación con enlaces.</p>
+                        <img src="http://www.edu4java.com/_img/web-en/bodyStructureNav.png" alt="Ejemplo Nav">
                     </div>
 
                     <div class="item-semantica" id="main">
-                        <h3>&lt;main&gt;</h3>
-                        <img src="https://via.placeholder.com/400x200?text=Main" alt="Ejemplo Main">
-                        <p>Contiene el contenido principal del documento.</p>
+                        <h2>&lt;main&gt;</h2>
+                        <p class="descripcion-tipo">Contiene el contenido principal del documento.</p>
+                        <img src="https://www.tpgi.com/wp-content/uploads/regions-typical1.png" alt="Ejemplo Main">
                     </div>
 
                     <div class="item-semantica" id="section">
-                        <h3>&lt;section&gt;</h3>
-                        <img src="https://via.placeholder.com/400x200?text=Section" alt="Ejemplo Section">
-                        <p>Representa una sección temática dentro de la página.</p>
+                        <h2>&lt;section&gt;</h2>
+                        <p class="descripcion-tipo">Representa una sección temática dentro de la página.</p>
+                        <img src="http://www.edu4java.com/_img/web-en/bodyStructureSection.png" alt="Ejemplo Section">
                     </div>
 
                     <div class="item-semantica" id="article">
-                        <h3>&lt;article&gt;</h3>
-                        <img src="https://via.placeholder.com/400x200?text=Article" alt="Ejemplo Article">
-                        <p>Contenido independiente como noticias o publicaciones.</p>
+                        <h2>&lt;article&gt;</h2>
+                        <p class="descripcion-tipo">Contenido independiente como noticias o publicaciones.</p>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdaOseJ9ylKvcEX1f58O6Lae269-xa_tF2kQ&s"
+                            alt="Ejemplo Article">
                     </div>
 
                     <div class="item-semantica" id="aside">
-                        <h3>&lt;aside&gt;</h3>
-                        <img src="https://via.placeholder.com/400x200?text=Aside" alt="Ejemplo Aside">
-                        <p>Contenido secundario como barras laterales.</p>
+                        <h2>&lt;aside&gt;</h2>
+                        <p class="descripcion-tipo">Contenido secundario como barras laterales.</p>
+                        <img src="http://www.edu4java.com/_img/web-en/bodyStructureAside.png" alt="Ejemplo Aside">
                     </div>
 
                     <div class="item-semantica" id="footer">
-                        <h3>&lt;footer&gt;</h3>
-                        <img src="https://via.placeholder.com/400x200?text=Footer" alt="Ejemplo Footer">
-                        <p>Pie de página con información adicional.</p>
-                    </div>
-
-                    <div class="item-semantica" id="figure">
-                        <h3>&lt;figure&gt; y &lt;figcaption&gt;</h3>
-                        <img src="https://via.placeholder.com/400x200?text=Figure+Figcaption" alt="Ejemplo Figure">
-                        <p>Agrupa contenido multimedia con su descripción.</p>
+                        <h2>&lt;footer&gt;</h2>
+                        <p class="descripcion-tipo">Pie de página con información adicional.</p>
+                        <img src="http://www.edu4java.com/_img/web-en/bodyStructureFooter.png" alt="Ejemplo Footer">
                     </div>
 
                 </div>
             </div>
+            <h1 class="semiTitulos text-center">Ejemplos en codigo</h1>
+            <section class="pad150"
+                style="padding-left: 150px; padding-right: 150px; font-size: 14px; margin-top: 50px;">
+                <div class="accordion" id="accordionEstructura">
+
+                    <!-- HEADER -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingHeader">
+                            <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseHeader" aria-expanded="false"
+                                aria-controls="collapseHeader">
+                                &lt;header&gt;
+                            </button>
+                        </h2>
+                        <div id="collapseHeader" class="accordion-collapse collapse" aria-labelledby="headingHeader"
+                            data-bs-parent="#accordionEstructura">
+                            <div class="accordion-body">
+                                <p>Define la cabecera de una página o sección.</p>
+                                <pre><code>&lt;header&gt;
+  &lt;h1&gt;Mi Página Web&lt;/h1&gt;
+  &lt;p&gt;Bienvenido a mi sitio&lt;/p&gt;
+&lt;/header&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NAV -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingNav">
+                            <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseNav" aria-expanded="false"
+                                aria-controls="collapseNav">
+                                &lt;nav&gt;
+                            </button>
+                        </h2>
+                        <div id="collapseNav" class="accordion-collapse collapse" aria-labelledby="headingNav"
+                            data-bs-parent="#accordionEstructura">
+                            <div class="accordion-body">
+                                <p>Contiene enlaces de navegación.</p>
+                                <pre><code>&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Servicios&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MAIN -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingMain">
+                            <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseMain" aria-expanded="false"
+                                aria-controls="collapseMain">
+                                &lt;main&gt;
+                            </button>
+                        </h2>
+                        <div id="collapseMain" class="accordion-collapse collapse" aria-labelledby="headingMain"
+                            data-bs-parent="#accordionEstructura">
+                            <div class="accordion-body">
+                                <p>Contiene el contenido principal del documento.</p>
+                                <pre><code>&lt;main&gt;
+  &lt;h2&gt;Contenido Principal&lt;/h2&gt;
+  &lt;p&gt;Aquí va la información más importante.&lt;/p&gt;
+&lt;/main&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SECTION -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSection">
+                            <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseSection" aria-expanded="false"
+                                aria-controls="collapseSection">
+                                &lt;section&gt;
+                            </button>
+                        </h2>
+                        <div id="collapseSection" class="accordion-collapse collapse" aria-labelledby="headingSection"
+                            data-bs-parent="#accordionEstructura">
+                            <div class="accordion-body">
+                                <p>Define una sección temática dentro de la página.</p>
+                                <pre><code>&lt;section&gt;
+  &lt;h3&gt;Noticias&lt;/h3&gt;
+  &lt;p&gt;Últimas actualizaciones del sitio.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ARTICLE -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingArticle">
+                            <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseArticle" aria-expanded="false"
+                                aria-controls="collapseArticle">
+                                &lt;article&gt;
+                            </button>
+                        </h2>
+                        <div id="collapseArticle" class="accordion-collapse collapse" aria-labelledby="headingArticle"
+                            data-bs-parent="#accordionEstructura">
+                            <div class="accordion-body">
+                                <p>Representa contenido independiente.</p>
+                                <pre><code>&lt;article&gt;
+  &lt;h3&gt;Artículo de Blog&lt;/h3&gt;
+  &lt;p&gt;Este es un artículo independiente.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ASIDE -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingAside">
+                            <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseAside" aria-expanded="false"
+                                aria-controls="collapseAside">
+                                &lt;aside&gt;
+                            </button>
+                        </h2>
+                        <div id="collapseAside" class="accordion-collapse collapse" aria-labelledby="headingAside"
+                            data-bs-parent="#accordionEstructura">
+                            <div class="accordion-body">
+                                <p>Contiene información complementaria.</p>
+                                <pre><code>&lt;aside&gt;
+  &lt;h4&gt;Publicidad&lt;/h4&gt;
+  &lt;p&gt;Contenido adicional o enlaces relacionados.&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FOOTER -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFooter">
+                            <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFooter" aria-expanded="false"
+                                aria-controls="collapseFooter">
+                                &lt;footer&gt;
+                            </button>
+                        </h2>
+                        <div id="collapseFooter" class="accordion-collapse collapse" aria-labelledby="headingFooter"
+                            data-bs-parent="#accordionEstructura">
+                            <div class="accordion-body">
+                                <p>Define el pie de página.</p>
+                                <pre><code>&lt;footer&gt;
+  &lt;p&gt;© 2026 Mi Sitio Web&lt;/p&gt;
+  &lt;a href="#"&gt;Términos y Condiciones&lt;/a&gt;
+&lt;/footer&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
         </section>
         <section class="aside">
             <h5>Navegación</h5>

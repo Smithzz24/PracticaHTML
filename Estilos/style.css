@@ -350,3 +350,20 @@ h4 {
 .item-semantica h3 {
     margin-bottom: 10px;
 }
+
+.descripcion-tipo {
+    font-size: 20px;
+    color: #555;
+    font-weight: 500;
+}
+.contenedor-semantica h2{
+    color: #f33434;
+}
+.contenedor-semantica img{
+    height: auto;
+    width: 300px;
+}
+.img-semantica{
+    height: auto;
+    width: 300px;
+}
