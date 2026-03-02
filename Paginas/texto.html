@@ -1,18 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etiquetas HTML</title>
+    <title>Etiquetas de Texto en HTML</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../Estilos/style.css">
     <link rel="stylesheet" href="../Funciones/funciones.css">
-    <div id="navbar-container"></div>
 </head>
 
 <body>
+
+    <div id="navbar-container"></div>
+
+    <div class="container mt-5 mb-5">
+
+        <h1 class="text-center mb-4 titulos">Etiquetas de Texto en HTML</h1>
+
+        <!-- Encabezados -->
+        <section class="mb-5">
+            <h2>1. Encabezados &lt;h1&gt; - &lt;h6&gt;</h2>
+            <p>Se utilizan para definir títulos y subtítulos. Van desde el más importante (&lt;h1&gt;) hasta el menos importante (&lt;h6&gt;).</p>
+
+            <div class="border p-3 bg-light">
+                <h1>Ejemplo H1</h1>
+                <h2>Ejemplo H2</h2>
+                <h3>Ejemplo H3</h3>
+                <h4>Ejemplo H4</h4>
+                <h5>Ejemplo H5</h5>
+                <h6>Ejemplo H6</h6>
+            </div>
+        </section>
+
+        <!-- Párrafo -->
+        <section class="mb-5">
+            <h2>2. Párrafo &lt;p&gt;</h2>
+            <p>Define un bloque de texto.</p>
+
+            <div class="border p-3 bg-light">
+                <p>Este es un ejemplo de un párrafo en HTML.</p>
+            </div>
+        </section>
+
+        <!-- Negrita y énfasis -->
+        <section class="mb-5">
+            <h2>3. Negrita y Énfasis</h2>
+            <p>
+                &lt;strong&gt; → Texto con importancia (negrita semántica). <br>
+                &lt;b&gt; → Texto en negrita sin importancia semántica. <br>
+                &lt;em&gt; → Texto con énfasis (cursiva semántica). <br>
+                &lt;i&gt; → Texto en cursiva sin importancia semántica.
+            </p>
+
+            <div class="border p-3 bg-light">
+                <p><strong>Texto importante con strong</strong></p>
+                <p><b>Texto en negrita con b</b></p>
+                <p><em>Texto enfatizado con em</em></p>
+                <p><i>Texto en cursiva con i</i></p>
+            </div>
+        </section>
+
+        <!-- Texto pequeño y marcado -->
+        <section class="mb-5">
+            <h2>4. Texto pequeño y resaltado</h2>
+            <p>
+                &lt;small&gt; → Texto más pequeño. <br>
+                &lt;mark&gt; → Texto resaltado.
+            </p>
+
+            <div class="border p-3 bg-light">
+                <p><small>Este texto es pequeño</small></p>
+                <p><mark>Este texto está resaltado</mark></p>
+            </div>
+        </section>
+
+        <!-- Texto eliminado e insertado -->
+        <section class="mb-5">
+            <h2>5. Texto eliminado e insertado</h2>
+            <p>
+                &lt;del&gt; → Texto eliminado (tachado). <br>
+                &lt;ins&gt; → Texto insertado (subrayado).
+            </p>
+
+            <div class="border p-3 bg-light">
+                <p><del>Texto eliminado</del></p>
+                <p><ins>Texto insertado</ins></p>
+            </div>
+        </section>
+
+        <!-- Subíndice y superíndice -->
+        <section class="mb-5">
+            <h2>6. Subíndice y Superíndice</h2>
+            <p>
+                &lt;sub&gt; → Subíndice. <br>
+                &lt;sup&gt; → Superíndice.
+            </p>
+
+            <div class="border p-3 bg-light">
+                <p>Fórmula química: H<sub>2</sub>O</p>
+                <p>Potencia matemática: 5<sup>2</sup> = 25</p>
+            </div>
+        </section>
+
+        <!-- Citas -->
+        <section class="mb-5">
+            <h2>7. Citas</h2>
+            <p>
+                &lt;blockquote&gt; → Cita en bloque. <br>
+                &lt;q&gt; → Cita en línea.
+            </p>
+
+            <div class="border p-3 bg-light">
+                <blockquote class="blockquote">
+                    Esta es una cita en bloque.
+                </blockquote>
+                <p>Ejemplo de cita en línea: <q>El conocimiento es poder</q></p>
+            </div>
+        </section>
+
+        <!-- Código -->
+        <section class="mb-5">
+            <h2>8. Código</h2>
+            <p>
+                &lt;code&gt; → Representa código en línea. <br>
+                &lt;pre&gt; → Mantiene formato y espacios.
+            </p>
+
+            <div class="border p-3 bg-light">
+                <p>Ejemplo en línea: <code>console.log("Hola mundo");</code></p>
+
+                <pre>
+&lt;html&gt;
+    &lt;body&gt;
+        Hola Mundo
+    &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+            </div>
+        </section>
+
+    </div>
+
+    <div id="footer-container"></div>
 
 </body>
 
@@ -22,14 +153,12 @@
         .then(data => {
             document.getElementById('navbar-container').innerHTML = data;
         });
-</script>
-<script>
+
     fetch('../Funciones/footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer-container').innerHTML = data;
         });
 </script>
-<div id="footer-container"></div>
 
 </html>
