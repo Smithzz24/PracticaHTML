@@ -130,11 +130,6 @@ a {
     padding-right: 15px;
 }
 
-#NavbarCustom:hover {
-    background-color: #f0f0f0;
-    font-weight: bold;
-    border-radius: 10px;
-}
 
 #apartado1 {
     background-color: #ffffff;
@@ -211,10 +206,6 @@ a {
     transition: all 0.3s ease;
 }
 
-.aside ul li a.active {
-    background-color: #0d6efd;
-    color: white;
-}
 
 .texto{
     padding-left: 150px;
