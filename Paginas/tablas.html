@@ -13,15 +13,17 @@
 </head>
 
 <body style="background-color: white;">
+    <div class="contentIndex">
+        <section class="informacion">
     <section class="pad150">
-        <h1 class="titulos">Tablas</h1>
+        <h1 id="descripcion" class="titulos">Tablas</h1>
         <p class="texto" style="font-size: 15px;">Las tablas permiten organizar datos en filas y columnas usando
             distintas etiquetas. Aquí encontrarás explicaciones y ejemplos estilizados con Bootstrap, como en un
             artículo de blog.</p>
     </section>
 
     <section class="pad150 section-explain">
-        <h2 class="semititulos" style="color: black; text-align: left; font-size: 25px; margin-top: 20px;">Etiquetas
+        <h2 id="etiquetas" class="semititulos" style="color: black; text-align: left; font-size: 25px; margin-top: 20px;">Etiquetas
             recomendadas</h2>
         <p class="texto" style="font-size: 15px;">Las etiquetas más comunes para construir tablas son las siguientes:
         </p>
@@ -60,7 +62,7 @@
     </section>
 
     <section class="pad150">
-        <h2 class="semititulos" style="color: black; text-align: left; font-size: 25px; margin-top: 20px;">Ejemplos de
+        <h2 id="ejemplos" class="semititulos" style="color: black; text-align: left; font-size: 25px; margin-top: 20px;">Ejemplos de
             tablas</h2>
         <p class="texto" style="font-size: 15px;">A continuación dos ejemplos simples de tablas construidas con las
             etiquetas vistas arriba. El primero usa solo &lt;table&gt;, &lt;tr&gt;, &lt;th&gt; y &lt;td&gt;, el segundo
@@ -68,7 +70,7 @@
         <div class="container text-center">
             <div class="row justify-content-evenly">
                 <div class="col-4">
-                    <h4>Tabla básica</h4>
+                    <h4 id="tabla-basica">Tabla básica</h4>
                     <table class="table table-bordered">
                         <tr>
                             <th>Nombre</th>
@@ -85,7 +87,7 @@
                     </table>
                 </div>
                 <div class="col-4">
-                    <h4>Tabla con thead/tbody</h4>
+                    <h4 id="tabla-thead-tbody">Tabla con thead/tbody</h4>
                     <table class="table table-striped">
                         <thead>
                             <tr>
@@ -206,6 +208,38 @@
         </div>
     </section>
     <br><br><br>
+
+        </section>
+        <section class="aside">
+            <h5>Navegación</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#descripcion">Descripción</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#etiquetas">Etiquetas recomendadas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ejemplos">Ejemplos de tablas</a>
+                </li>
+
+                <li class="nav-item mt-2"><strong>Tipos</strong></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tabla-basica">Tabla básica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tabla-thead-tbody">Tabla thead/tbody</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseResponsive">Tabla responsiva</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseSpan">Celdas fusionadas</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
 </body>
 <script>
     fetch('../Funciones/navbar-apartados.html')
@@ -222,5 +256,7 @@
         });
 </script>
 <div id="footer-container"></div>
+
+<script src="../Funciones/scroll.js"></script>
 
 </html>

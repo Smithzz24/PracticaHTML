@@ -13,10 +13,12 @@
 </head>
 
 <body>
+    <div class="contentIndex">
+        <section class="informacion">
 
     <!-- INTRODUCCIÓN -->
     <section class="pad150">
-        <h1 class="titulos">Listas en HTML</h1>
+        <h1 id="descripcion" class="titulos">Listas en HTML</h1>
         <p class="texto" style="font-size: 15px;">
             Las listas en HTML permiten organizar información de manera estructurada.
             Son fundamentales para menús, pasos, características de productos,
@@ -25,7 +27,7 @@
     </section>
 
     <section class="pad150 section-explain">
-        <h2 class="semititulos" style="color: black; text-align: left; font-size: 25px; margin-top: 20px;">
+        <h2 id="tipos" class="semititulos" style="color: black; text-align: left; font-size: 25px; margin-top: 20px;">
             ¿Qué tipos de listas existen?
         </h2>
         <p class="texto" style="font-size: 15px;">
@@ -41,7 +43,7 @@
             <!-- LISTA DESORDENADA -->
             <div class="col-8" id="apartado1">
                 <div class="col">
-                    <h4>Lista Desordenada (ul)</h4>
+                    <h4 id="lista-ul">Lista Desordenada (ul)</h4>
                     <div class="ejemplo">
                         <div class="codigo">
 &lt;ul&gt;
@@ -64,7 +66,7 @@
             <!-- LISTA ORDENADA -->
             <div class="col-8" id="apartado1">
                 <div class="col">
-                    <h4>Lista Ordenada (ol)</h4>
+                    <h4 id="lista-ol">Lista Ordenada (ol)</h4>
                     <div class="ejemplo">
                         <div class="codigo">
 &lt;ol&gt;
@@ -87,7 +89,7 @@
             <!-- LISTA DE DEFINICIÓN -->
             <div class="col-8" id="apartado1">
                 <div class="col">
-                    <h4>Lista de Definición (dl)</h4>
+                    <h4 id="lista-dl">Lista de Definición (dl)</h4>
                     <div class="ejemplo">
                         <div class="codigo">
 &lt;dl&gt;
@@ -200,6 +202,37 @@
 
     <br><br><br>
 
+        </section>
+        <section class="aside">
+            <h5>Navegación</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#descripcion">Descripción</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tipos">Tipos de listas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#apartado1">Ejemplos visuales</a>
+                </li>
+
+                <li class="nav-item mt-2"><strong>Tipos</strong></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lista-ul">Lista desordenada (ul)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lista-ol">Lista ordenada (ol)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lista-dl">Lista de definición (dl)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseNested">Listas anidadas</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
 </body>
 
 <script>
@@ -219,5 +252,7 @@
 </script>
 
 <div id="footer-container"></div>
+
+<script src="../Funciones/scroll.js"></script>
 
 </html>

@@ -13,8 +13,10 @@
 </head>
 
 <body>
+    <div class="contentIndex">
+        <section class="informacion">
     <section class="pad150">
-        <h1 class="titulos">Formularios</h1>
+        <h1 id="descripcion" class="titulos">Formularios</h1>
         <p class="texto" style="font-size: 15px;">Los formularios en HTML permiten al usuario enviar datos a un servidor
             o interactuar con la
             página. Son la base de registros, búsquedas, encuestas y mucho más; aquí verás ejemplos claros y bien
@@ -22,7 +24,7 @@
     </section>
 
     <section class="pad150 section-explain">
-        <h2 class="semititulos" style="color: black; text-align: left; font-size: 25px; margin-top: 20px;">¿Cómo
+        <h2 id="tipos" class="semititulos" style="color: black; text-align: left; font-size: 25px; margin-top: 20px;">¿Cómo
             funciona cada tipo?</h2>
         <p class="texto" style="font-size: 15px;">A continuación se muestran los principales tipos de entrada que puedes
             utilizar en un
@@ -65,7 +67,7 @@
                 </div>
             </div>
             <div class="col-4" id="apartado1">
-                <div class="col" id="formulario1">
+                <div class="col" id="formulario2">
                     <form>
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Ejemplo textarea</label>
@@ -225,6 +227,52 @@
         </div>
     </section>
     <br><br><br>
+
+        </section>
+        <section class="aside">
+            <h5>Navegación</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#descripcion">Descripción</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tipos">¿Cómo funciona cada tipo?</a>
+                </li>
+
+                <li class="nav-item mt-2"><strong>Ejemplos</strong></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formulario1">Ejemplo formulario 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formulario2">Ejemplo formulario 2</a>
+                </li>
+
+                <li class="nav-item mt-2"><strong>Controles</strong></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseText">Campos de texto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseEmail">Campo email</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapsePassword">Campo contraseña</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseChecks">Casillas y radios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseSelect">Menú desplegable</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseTextarea">Área de texto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapseButtons">Botones</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
 </body>
 
 <script>
@@ -242,5 +290,7 @@
         });
 </script>
 <div id="footer-container"></div>
+
+<script src="../Funciones/scroll.js"></script>
 
 </html>
