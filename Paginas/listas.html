@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etiquetas HTML</title>
+    <title>Listas en HTML</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../Estilos/style.css">
@@ -13,6 +13,193 @@
 </head>
 
 <body>
+
+    <!-- INTRODUCCIÓN -->
+    <section class="pad150">
+        <h1 class="titulos">Listas en HTML</h1>
+        <p class="texto" style="font-size: 15px;">
+            Las listas en HTML permiten organizar información de manera estructurada.
+            Son fundamentales para menús, pasos, características de productos,
+            glosarios y estructuras jerárquicas dentro de una página web.
+        </p>
+    </section>
+
+    <section class="pad150 section-explain">
+        <h2 class="semititulos" style="color: black; text-align: left; font-size: 25px; margin-top: 20px;">
+            ¿Qué tipos de listas existen?
+        </h2>
+        <p class="texto" style="font-size: 15px;">
+            HTML permite crear tres tipos principales de listas: desordenadas,
+            ordenadas y de definición. También es posible anidarlas entre sí.
+        </p>
+    </section>
+
+    <!-- EJEMPLOS VISUALES -->
+    <div class="container text-center">
+        <div class="row justify-content-evenly">
+
+            <!-- LISTA DESORDENADA -->
+            <div class="col-8" id="apartado1">
+                <div class="col">
+                    <h4>Lista Desordenada (ul)</h4>
+                    <div class="ejemplo">
+                        <div class="codigo">
+&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+                        </div>
+                        <div class="resultado">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LISTA ORDENADA -->
+            <div class="col-8" id="apartado1">
+                <div class="col">
+                    <h4>Lista Ordenada (ol)</h4>
+                    <div class="ejemplo">
+                        <div class="codigo">
+&lt;ol&gt;
+    &lt;li&gt;Paso 1&lt;/li&gt;
+    &lt;li&gt;Paso 2&lt;/li&gt;
+    &lt;li&gt;Paso 3&lt;/li&gt;
+&lt;/ol&gt;
+                        </div>
+                        <div class="resultado">
+                            <ol>
+                                <li>Paso 1</li>
+                                <li>Paso 2</li>
+                                <li>Paso 3</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LISTA DE DEFINICIÓN -->
+            <div class="col-8" id="apartado1">
+                <div class="col">
+                    <h4>Lista de Definición (dl)</h4>
+                    <div class="ejemplo">
+                        <div class="codigo">
+&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;Lenguaje de marcado&lt;/dd&gt;
+&lt;/dl&gt;
+                        </div>
+                        <div class="resultado">
+                            <dl>
+                                <dt>HTML</dt>
+                                <dd>Lenguaje de marcado</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <!-- ACORDEÓN EXPLICATIVO -->
+    <section class="pad150" style="padding-left: 150px; padding-right: 150px; font-size: 14px;">
+        <div class="accordion" id="accordionLists">
+
+            <!-- UL -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingUL">
+                    <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseUL">
+                        Lista Desordenada (ul)
+                    </button>
+                </h2>
+                <div id="collapseUL" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionLists">
+                    <div class="accordion-body">
+                        <p>Se utiliza cuando el orden no importa. Usa viñetas.</p>
+<pre><code>&lt;ul&gt;
+  &lt;li&gt;Elemento&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OL -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOL">
+                    <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseOL">
+                        Lista Ordenada (ol)
+                    </button>
+                </h2>
+                <div id="collapseOL" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionLists">
+                    <div class="accordion-body">
+                        <p>Se utiliza cuando el orden sí importa (pasos, instrucciones).</p>
+<pre><code>&lt;ol&gt;
+  &lt;li&gt;Paso 1&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DL -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingDL">
+                    <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseDL">
+                        Lista de Definición (dl)
+                    </button>
+                </h2>
+                <div id="collapseDL" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionLists">
+                    <div class="accordion-body">
+                        <p>Se usa para términos y definiciones.</p>
+<pre><code>&lt;dl&gt;
+  &lt;dt&gt;Término&lt;/dt&gt;
+  &lt;dd&gt;Definición&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ANIDADAS -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNested">
+                    <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseNested">
+                        Listas Anidadas
+                    </button>
+                </h2>
+                <div id="collapseNested" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionLists">
+                    <div class="accordion-body">
+                        <p>Puedes colocar listas dentro de otras listas.</p>
+<pre><code>&lt;ul&gt;
+  &lt;li&gt;Frontend
+    &lt;ul&gt;
+      &lt;li&gt;HTML&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <br><br><br>
+
 </body>
 
 <script>
@@ -22,6 +209,7 @@
             document.getElementById('navbar-container').innerHTML = data;
         });
 </script>
+
 <script>
     fetch('../Funciones/footer.html')
         .then(response => response.text())
@@ -29,6 +217,7 @@
             document.getElementById('footer-container').innerHTML = data;
         });
 </script>
+
 <div id="footer-container"></div>
 
 </html>
