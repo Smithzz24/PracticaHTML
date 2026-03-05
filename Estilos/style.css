@@ -181,12 +181,24 @@ a {
     position: sticky;
 }
 
-/* cuando quieras que quede pegado al hacer scroll */
-.sticky-menu {
+.sticky-aside {
     position: sticky;
     top: 0;
     width: 250px;
     z-index: 999;
+}
+
+.sticky-menu ul {
+    padding-left: 0;
+}
+
+.sticky-menu .nav-link {
+    font-size: 12px;
+    color: #333;
+}
+
+.sticky-menu .nav-link:hover {
+    color: #0d6efd;
 }
 
 /* si tienes un navbar superior fijo */
