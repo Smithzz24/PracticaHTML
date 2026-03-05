@@ -303,12 +303,9 @@ a {
     transition: transform 0.3s ease;
 }
 
-.item-semantica:hover {
-    transform: translateY(-5px);
-}
 
 .item-semantica img {
-    width: 100%;
+    width: 75%;
     height: auto;
     margin: 15px 0;
     border-radius: 8px;
