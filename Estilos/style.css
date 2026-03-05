@@ -467,3 +467,16 @@ a {
         gap: 20px;
     }
 }
+
+.aside {
+    flex: 2;
+    width: 250px;
+    height: fit-content;
+}
+
+.sticky-aside {
+    position: sticky;
+    top: 0;
+    width: 250px;
+    z-index: 999;
+}
