@@ -9,271 +9,297 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../Estilos/style.css">
     <link rel="stylesheet" href="../Funciones/funciones.css">
-    <link rel="shortcut icon" href="../Recursos/imagen.ico"/>
+    <link rel="shortcut icon" href="../Recursos/imagen.ico" />
     <div id="navbar-container"></div>
 </head>
 
 <body>
     <div class="contentIndex">
         <section class="informacion">
-    <section class="pad150">
-        <h1 id="descripcion" class="titulos">Formularios</h1>
-        <p class="texto" style="font-size: 15px;">Los formularios en HTML permiten al usuario enviar datos a un servidor
-            o interactuar con la
-            página. Son la base de registros, búsquedas, encuestas y mucho más; aquí verás ejemplos claros y bien
-            diseñados con Bootstrap.</p>
-    </section>
+            <section class="pad150">
+                <h1 id="descripcion" class="titulos">Formularios</h1>
+                <p class="texto" style="font-size: 15px;">
+                    Los formularios son la forma estándar en HTML para recopilar información de los usuarios.
+                    A continuación se muestran todos los tipos de controles disponibles; cada ejemplo
+                    incluye el código y el resultado en la página.
+                </p>
+            </section>
 
-    <section class="pad150 section-explain">
-        <h2 id="tipos" class="semititulos" style="color: black; text-align: left; font-size: 25px; margin-top: 20px;">¿Cómo
-            funciona cada tipo?</h2>
-        <p class="texto" style="font-size: 15px;">A continuación se muestran los principales tipos de entrada que puedes
-            utilizar en un
-            formulario HTML. Todos los controles están decorados con clases de Bootstrap y envueltos en bloques
-            genéricos para mantener el estilo.</p>
-    </section>
+            <section class="pad150 section-explain">
+                <h2 id="tipos" class="semititulos"
+                    style="color: black; text-align: left; font-size: 25px; margin-top: 20px;">
+                    Controles de formulario
+                </h2>
+                <p class="texto" style="font-size: 15px;">
+                    Navega por las secciones de la derecha para saltar rápidamente a un tipo de control.
+                </p>
+            </section>
 
-    <div class="container text-center">
-        <div class="row justify-content-evenly">
-            <div class="col-4" id="apartado1">
-                <div class="col" id="formulario1">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputUser1" class="form-label">Usuario</label>
-                            <input type="text" class="form-control" id="exampleInputUser1"
-                                placeholder="Ingrese su nombre de usuario">
+            <section class="pad150">
+                <div class="container">
+                    <!-- Text -->
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <h3 id="text">Texto</h3>
+                            <pre><code>&lt;input type="text" class="form-control" placeholder="Texto corto"&gt;</code></pre>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Correo Elecronico</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Ingrese su correo electrónico">
-                            <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie
-                                más.
-                            </div>
+                        <div class="col-md-6">
+                            <label for="textExample" class="form-label">Resultado:</label>
+                            <input type="text" id="textExample" class="form-control" placeholder="Texto corto">
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Ingrese su contraseña">
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Presioname</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                        <button type="submit" class="btn btn-secondary">Submit</button>
-                        <button type="submit" class="btn btn-success">Submit</button>
-                        <button type="submit" class="btn btn-danger">Submit</button>
-                    </form>
-                </div>
-            </div>
-            <div class="col-4" id="apartado1">
-                <div class="col" id="formulario2">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Ejemplo textarea</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            <br>
-                            <select class="form-select">
-                                <option>Opción 1</option>
-                                <option>Opción 2</option>
-                                <option>Opción 3</option>
-                                <option>Opción 4</option>
-                            </select>
-                            <br>
-                            <input type="checkbox" id="check1"> <label for="check1"
-                                style="padding-right: 50px;">Aceptar</label>
-                            <input type="checkbox" id="check2"> <label for="check2">Rechazar</label>
-                            <br>
-                            <input type="radio" name="gender" value="M"><label for="gender1"
-                                style="padding-right: 37px; margin-top: 15px;"> Masculino</label>
-                            <input type="radio" name="gender" value="F"><label for="gender2"> Femenino</label>
-                            <br>
-                            <div style="margin-top: 20px;"></div>
-                            <button type="button" class="btn btn-outline-warning">Warning</button>
-                            <button type="button" class="btn btn-outline-info">Info</button>
-                            <button type="button" class="btn btn-outline-light">Light</button>
-                            <button type="button" class="btn btn-outline-dark">Dark</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br><br><br>
+                    </div>
 
-    <section class="pad150" style="padding-left: 150px; padding-right: 150px; font-size: 14px;">
-        <div class="accordion" id="accordionForms">
-            <!-- texto input -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingText">
-                    <button class="accordion-button collapsed" style="font-size: 17px;" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseText" aria-expanded="false" aria-controls="collapseText">
-                        Campos de texto
-                    </button>
-                </h2>
-                <div id="collapseText" class="accordion-collapse collapse" aria-labelledby="headingText"
-                    data-bs-parent="#accordionForms">
-                    <div class="accordion-body">
-                        <p>Usa <code>&lt;input type=&quot;text&quot;&gt;</code> para texto corto.</p>
-                        <pre><code>&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Ingrese texto&quot;&gt;</code></pre>
+                    <!-- Email -->
+                    <div class="row align-items-center mb-12">
+                        <div class="col-md-6">
+                            <h3 id="email">Correo electrónico</h3>
+                            <pre><code>&lt;input type="email" class="form-control" placeholder="user@example.com"&gt;</code></pre>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="emailExample" class="form-label">Resultado:</label>
+                            <input type="email" id="emailExample" class="form-control" placeholder="user@example.com">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- email input -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingEmail">
-                    <button class="accordion-button collapsed" style="font-size: 17px;"  type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseEmail" aria-expanded="false" aria-controls="collapseEmail">
-                        Campo de correo electrónico
-                    </button>
-                </h2>
-                <div id="collapseEmail" class="accordion-collapse collapse" aria-labelledby="headingEmail"
-                    data-bs-parent="#accordionForms">
-                    <div class="accordion-body">
-                        <p>El tipo <code>email</code> valida automáticamente el formato.</p>
-                        <pre><code>&lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;user@example.com&quot;&gt;</code></pre>
+                    <br><br>
+                    <!-- Password -->
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <h3 id="password">Contraseña</h3>
+                            <pre><code>&lt;input type="password" class="form-control" placeholder="Contraseña"&gt;</code></pre>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="passwordExample" class="form-label">Resultado:</label>
+                            <input type="password" id="passwordExample" class="form-control" placeholder="Contraseña">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- password -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingPassword">
-                    <button class="accordion-button collapsed" style="font-size: 17px;"  type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapsePassword" aria-expanded="false" aria-controls="collapsePassword">
-                        Campo de contraseña
-                    </button>
-                </h2>
-                <div id="collapsePassword" class="accordion-collapse collapse" aria-labelledby="headingPassword"
-                    data-bs-parent="#accordionForms">
-                    <div class="accordion-body">
-                        <p>Usa <code>type=&quot;password&quot;</code> para ocultar el texto.</p>
-                        <pre><code>&lt;input type=&quot;password&quot; class=&quot;form-control&quot; placeholder=&quot;Contraseña&quot;&gt;</code></pre>
+
+                    <!-- Number -->
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <h3 id="number">Número</h3>
+                            <pre><code>&lt;input type="number" class="form-control" min="0" max="100"&gt;</code></pre>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="numberExample" class="form-label">Resultado:</label>
+                            <input type="number" id="numberExample" class="form-control" min="0" max="100">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- checkbox and radio -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingChecks">
-                    <button class="accordion-button collapsed" style="font-size: 17px;"  type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseChecks" aria-expanded="false" aria-controls="collapseChecks">
-                        Casillas y radios
-                    </button>
-                </h2>
-                <div id="collapseChecks" class="accordion-collapse collapse" aria-labelledby="headingChecks"
-                    data-bs-parent="#accordionForms">
-                    <div class="accordion-body">
-                        <p>Usa <code>&lt;input type=&quot;checkbox&quot;&gt;</code> o <code>radio</code> para opciones.
-                        </p>
-                        <pre><code>&lt;input type=&quot;checkbox&quot; id=&quot;check1&quot;&gt; &lt;label for=&quot;check1&quot;&gt;Aceptar&lt;/label&gt;
-&lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;M&quot;&gt; Masculino</code></pre>
+
+                    <!-- Tel -->
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <h3 id="tel">Teléfono</h3>
+                            <pre><code>&lt;input type="tel" class="form-control" placeholder="+56 9 1234 5678"&gt;</code></pre>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="telExample" class="form-label">Resultado:</label>
+                            <input type="tel" id="telExample" class="form-control" placeholder="+56 9 1234 5678">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- select -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSelect">
-                    <button class="accordion-button collapsed" style="font-size: 17px;"  type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseSelect" aria-expanded="false" aria-controls="collapseSelect">
-                        Menú desplegable (select)
-                    </button>
-                </h2>
-                <div id="collapseSelect" class="accordion-collapse collapse" aria-labelledby="headingSelect"
-                    data-bs-parent="#accordionForms">
-                    <div class="accordion-body">
-                        <p>Etiqueta <code>&lt;select&gt;</code> con opciones <code>&lt;option&gt;</code>.</p>
-                        <pre><code>&lt;select class=&quot;form-select&quot;&gt;
-  &lt;option&gt;Opción 1&lt;/option&gt;
-  &lt;option&gt;Opción 2&lt;/option&gt;
-  &lt;option&gt;Opción 3&lt;/option&gt;
-  &lt;option&gt;Opción 4&lt;/option&gt;
+
+                    <!-- URL -->
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <h3 id="url">URL</h3>
+                            <pre><code>&lt;input type="url" class="form-control" placeholder="https://www.ejemplo.com"&gt;</code></pre>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="urlExample" class="form-label">Resultado:</label>
+                            <input type="url" id="urlExample" class="form-control"
+                                placeholder="https://www.ejemplo.com">
+                        </div>
+                    </div>
+
+                    <!-- Search -->
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <h3 id="search">Búsqueda</h3>
+                            <pre><code>&lt;input type="search" class="form-control" placeholder="Buscar..."&gt;</code></pre>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="searchExample" class="form-label">Resultado:</label>
+                            <input type="search" id="searchExample" class="form-control" placeholder="Buscar...">
+                        </div>
+                    </div>
+
+                    <!-- Color -->
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <h3 id="color">Color</h3>
+                            <pre><code>&lt;input type="color" class="form-control form-control-color" value="#563d7c"&gt;</code></pre>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="colorExample" class="form-label">Resultado:</label>
+                            <input type="color" id="colorExample" class="form-control form-control-color"
+                                value="#563d7c">
+                        </div>
+                    </div>
+
+                    <!-- Date/time -->
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <h3 id="date">Fecha y hora</h3>
+                            <pre><code>&lt;input type="date" class="form-control"&gt; (Sirve para saber la fecha comun)
+                                <br>
+&lt;input type="time" class="form-control"&gt; (Sirve para saber la hora comun)
+                                <br>
+&lt;input type="datetime-local" class="form-control"&gt; (Sirve para saber la fecha y hora local)
+                                <br>
+&lt;input type="month" class="form-control"&gt; (Sirve para saber el mes y año)
+                                <br>
+&lt;input type="week" class="form-control"&gt;</code></pre> (Sirve para saber la semana y año)
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Resultado:</label>
+                            <input type="date" class="form-control mb-2">
+                            <br>
+                            <input type="time" class="form-control mb-2">
+                            <br>
+                            <input type="datetime-local" class="form-control mb-2">
+                            <br>
+                            <input type="month" class="form-control mb-2">
+                            <br>
+                            <input type="week" class="form-control mb-2">
+                        </div>
+                    </div>
+
+                    <!-- Radio/checkbox -->
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <h3 id="checks">Checkbox y radio</h3>
+                            <pre><code>&lt;input type="checkbox" id="check1"&gt; &lt;label for="check1"&gt;Opción 1&lt;/label&gt;
+
+&lt;input type="radio" name="group" id="rad1" value="a"&gt; &lt;label for="rad1"&gt;A&lt;/label&gt;</code></pre>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Resultado:</label><br>
+                            <input type="checkbox" id="check1"><label for="check1" class="ms-1">Opción 1</label><br>
+                            <input type="radio" name="group" id="rad1" value="a"><label for="rad1"
+                                class="ms-1">A</label>
+                        </div>
+                    </div>
+
+                    <!-- File -->
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <h3 id="file">Archivo</h3>
+                            <pre><code>&lt;input type="file" class="form-control"&gt;</code></pre>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="fileExample" class="form-label">Resultado:</label>
+                            <input type="file" id="fileExample" class="form-control">
+                        </div>
+                    </div>
+
+                    <!-- Hidden -->
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <h3 id="hidden">Oculto</h3>
+                            <p>Los campos <code>hidden</code> no se muestran en la página.</p>
+                            <pre><code>&lt;input type="hidden" name="token" value="123ABC"&gt;</code></pre>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Resultado:</label>
+                            <p class="text-muted">No visible en el navegador.</p>
+                        </div>
+                    </div>
+
+                    <!-- Select -->
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <h3 id="select">Menú desplegable</h3>
+                            <pre><code>&lt;select class="form-select"&gt;
+  &lt;option&gt;Rojo&lt;/option&gt;
+  &lt;option&gt;Verde&lt;/option&gt;
+  &lt;option&gt;Azul&lt;/option&gt;
 &lt;/select&gt;</code></pre>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="selectExample" class="form-label">Resultado:</label>
+                            <select id="selectExample" class="form-select">
+                                <option>Rojo</option>
+                                <option>Verde</option>
+                                <option>Azul</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- textarea -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTextarea">
-                    <button class="accordion-button collapsed" style="font-size: 17px;"  type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTextarea" aria-expanded="false" aria-controls="collapseTextarea">
-                        Área de texto
-                    </button>
-                </h2>
-                <div id="collapseTextarea" class="accordion-collapse collapse" aria-labelledby="headingTextarea"
-                    data-bs-parent="#accordionForms">
-                    <div class="accordion-body">
-                        <p>Usa <code>&lt;textarea&gt;</code> para textos largos o comentarios.</p>
-                        <pre><code>&lt;textarea class=&quot;form-control&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;</code></pre>
-                    </div>
-                </div>
-            </div>
-            <!-- botones -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingButtons">
-                    <button class="accordion-button collapsed" style="font-size: 17px;" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseButtons" aria-expanded="false" aria-controls="collapseButtons">
-                        Botones de envío y acción
-                    </button>
-                </h2>
-                <div id="collapseButtons" class="accordion-collapse collapse" aria-labelledby="headingButtons"
-                    data-bs-parent="#accordionForms">
-                    <div class="accordion-body">
-                        <p>El botón <code>type=&quot;submit&quot;</code> envía el formulario; otros tipos son
-                            <code>button</code> y <code>reset</code>.
-                        </p>
-                        <pre><code>&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Enviar&lt;/button&gt;</code></pre>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <br><br><br>
 
+                    <!-- Textarea -->
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <h3 id="textarea">Área de texto</h3>
+                            <pre><code>&lt;textarea class="form-control" rows="3"&gt;&lt;/textarea&gt;</code></pre>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="textareaExample" class="form-label">Resultado:</label>
+                            <textarea id="textareaExample" class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Datalist -->
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <h3 id="datalist">Datalist</h3>
+                            <pre><code>&lt;input list="browsers" class="form-control"&gt;
+&lt;datalist id="browsers"&gt;
+  &lt;option value="Chrome"&gt;
+  &lt;option value="Firefox"&gt;
+  &lt;option value="Safari"&gt;
+&lt;/datalist&gt;</code></pre>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="datalistExample" class="form-label">Resultado:</label>
+                            <input list="browsers" id="datalistExample" class="form-control">
+                            <datalist id="browsers">
+                                <option value="Chrome">
+                                <option value="Firefox">
+                                <option value="Safari">
+                            </datalist>
+                        </div>
+                    </div>
+
+                    <!-- Range -->
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <h3 id="range">Rango</h3>
+                            <pre><code>&lt;input type="range" class="form-range" min="0" max="10"&gt;</code></pre>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="rangeExample" class="form-label">Resultado:</label>
+                            <input type="range" id="rangeExample" class="form-range" min="0" max="10">
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="row align-items-center mb-5">
+                        <div class="col-md-6">
+                            <h3 id="buttons">Botones</h3>
+                            <pre><code>&lt;button type="submit" class="btn btn-primary"&gt;Enviar&lt;/button&gt;
+&lt;button type="reset" class="btn btn-secondary"&gt;Reset&lt;/button&gt;
+&lt;button type="button" class="btn btn-success"&gt;Clic&lt;/button&gt;</code></pre>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Resultado:</label><br>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="reset" class="btn btn-secondary">Reset</button>
+                            <button type="button" class="btn btn-success">Clic</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
-        <section class="aside">
+        <section class="aside sticky-aside">
             <h5>Navegación</h5>
             <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link" href="#descripcion">Descripción</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#tipos">¿Cómo funciona cada tipo?</a>
-                </li>
-
-                <li class="nav-item mt-2"><strong>Ejemplos</strong></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#formulario1">Ejemplo formulario 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#formulario2">Ejemplo formulario 2</a>
-                </li>
-
-                <li class="nav-item mt-2"><strong>Controles</strong></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#collapseText">Campos de texto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#collapseEmail">Campo email</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#collapsePassword">Campo contraseña</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#collapseChecks">Casillas y radios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#collapseSelect">Menú desplegable</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#collapseTextarea">Área de texto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#collapseButtons">Botones</a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="#text"  style="font-size: 12px;">Texto</a></li>
+                <li class="nav-item"><a class="nav-link" href="#number"  style="font-size: 12px;">Número</a></li>
+                <li class="nav-item"><a class="nav-link" href="#search"  style="font-size: 12px;">Búsqueda</a></li>
+                <li class="nav-item"><a class="nav-link" href="#checks"  style="font-size: 12px;">Checkbox y radio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#select"  style="font-size: 12px;">Menú desplegable</a></li>
+                <li class="nav-item"><a class="nav-link" href="#range"  style="font-size: 12px;">Rango</a></li>
             </ul>
         </section>
     </div>
-
 </body>
 
 <script>
@@ -283,6 +309,7 @@
             document.getElementById('navbar-container').innerHTML = data;
         });
 </script>
+
 <script>
     fetch('../Funciones/footer.html')
         .then(response => response.text())
@@ -290,8 +317,7 @@
             document.getElementById('footer-container').innerHTML = data;
         });
 </script>
-<div id="footer-container"></div>
 
-<script src="../Funciones/scroll.js"></script>
+<div id="footer-container"></div>
 
 </html>
