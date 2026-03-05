@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/Estilos/style.css">
-    <link rel="shortcut icon" href="../Recursos/imagen.ico"/>
+    <link rel="shortcut icon" href="../Recursos/imagen.ico" />
     <div id="navbar-container"></div>
 </head>
 
@@ -16,9 +16,9 @@
 
     <div class="contentIndex">
 
-        <section class="informacion">
+        <section class="informacion" id="introduccion">
 
-            <h1 id="descripcion"class="titulos">Etiquetas de Texto en HTML</h1>
+            <h1 id="descripcion" class="titulos">Etiquetas de Texto en HTML</h1>
 
             <section id="textoIndex" class="mb-5 introduccion">
                 <p>
@@ -117,209 +117,212 @@
 
                 </div>
                 <h1 class="semiTitulos text-center">Ejemplos en codigo</h1>
-<section class="pad150"
-    style="padding-left: 150px; padding-right: 150px; font-size: 14px; margin-top: 50px;">
-    <div class="accordion" id="accordionEstructura">
+                <section class="pad150"
+                    style="padding-left: 150px; padding-right: 150px; font-size: 14px; margin-top: 50px;">
+                    <div class="accordion" id="accordionEstructura">
 
-        <!-- H1 - H6 -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingH">
-                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseH" aria-expanded="false"
-                    aria-controls="collapseH">
-                    &lt;h1&gt; - &lt;h6&gt;
-                </button>
-            </h2>
-            <div id="collapseH" class="accordion-collapse collapse" aria-labelledby="headingH"
-                data-bs-parent="#accordionEstructura">
-                <div class="accordion-body">
-                    <pre><code>&lt;h1&gt;Título Principal&lt;/h1&gt;
+                        <!-- H1 - H6 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingH">
+                                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseH" aria-expanded="false"
+                                    aria-controls="collapseH">
+                                    &lt;h1&gt; - &lt;h6&gt;
+                                </button>
+                            </h2>
+                            <div id="collapseH" class="accordion-collapse collapse" aria-labelledby="headingH"
+                                data-bs-parent="#accordionEstructura">
+                                <div class="accordion-body">
+                                    <pre><code>&lt;h1&gt;Título Principal&lt;/h1&gt;
 &lt;h2&gt;Subtítulo&lt;/h2&gt;
 &lt;h3&gt;Encabezado nivel 3&lt;/h3&gt;</code></pre>
-                </div>
-            </div>
-        </div>
+                                </div>
+                            </div>
+                        </div>
 
-        <!-- P -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingP">
-                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseP" aria-expanded="false"
-                    aria-controls="collapseP">
-                    &lt;p&gt;
-                </button>
-            </h2>
-            <div id="collapseP" class="accordion-collapse collapse" aria-labelledby="headingP"
-                data-bs-parent="#accordionEstructura">
-                <div class="accordion-body">
-                    <pre><code>&lt;p&gt;Este es un párrafo de ejemplo en HTML.&lt;/p&gt;</code></pre>
-                </div>
-            </div>
-        </div>
+                        <!-- P -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingP">
+                                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseP" aria-expanded="false"
+                                    aria-controls="collapseP">
+                                    &lt;p&gt;
+                                </button>
+                            </h2>
+                            <div id="collapseP" class="accordion-collapse collapse" aria-labelledby="headingP"
+                                data-bs-parent="#accordionEstructura">
+                                <div class="accordion-body">
+                                    <pre><code>&lt;p&gt;Este es un párrafo de ejemplo en HTML.&lt;/p&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
 
-        <!-- STRONG Y B -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingStrong">
-                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseStrong" aria-expanded="false"
-                    aria-controls="collapseStrong">
-                    &lt;strong&gt; y &lt;b&gt;
-                </button>
-            </h2>
-            <div id="collapseStrong" class="accordion-collapse collapse" aria-labelledby="headingStrong"
-                data-bs-parent="#accordionEstructura">
-                <div class="accordion-body">
-                    <pre><code>&lt;strong&gt;Texto importante&lt;/strong&gt;
+                        <!-- STRONG Y B -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingStrong">
+                                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseStrong" aria-expanded="false"
+                                    aria-controls="collapseStrong">
+                                    &lt;strong&gt; y &lt;b&gt;
+                                </button>
+                            </h2>
+                            <div id="collapseStrong" class="accordion-collapse collapse" aria-labelledby="headingStrong"
+                                data-bs-parent="#accordionEstructura">
+                                <div class="accordion-body">
+                                    <pre><code>&lt;strong&gt;Texto importante&lt;/strong&gt;
 &lt;b&gt;Texto en negrita&lt;/b&gt;</code></pre>
-                </div>
-            </div>
-        </div>
+                                </div>
+                            </div>
+                        </div>
 
-        <!-- EM E I -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingEm">
-                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseEm" aria-expanded="false"
-                    aria-controls="collapseEm">
-                    &lt;em&gt; e &lt;i&gt;
-                </button>
-            </h2>
-            <div id="collapseEm" class="accordion-collapse collapse" aria-labelledby="headingEm"
-                data-bs-parent="#accordionEstructura">
-                <div class="accordion-body">
-                    <pre><code>&lt;em&gt;Texto enfatizado&lt;/em&gt;
+                        <!-- EM E I -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEm">
+                                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseEm" aria-expanded="false"
+                                    aria-controls="collapseEm">
+                                    &lt;em&gt; e &lt;i&gt;
+                                </button>
+                            </h2>
+                            <div id="collapseEm" class="accordion-collapse collapse" aria-labelledby="headingEm"
+                                data-bs-parent="#accordionEstructura">
+                                <div class="accordion-body">
+                                    <pre><code>&lt;em&gt;Texto enfatizado&lt;/em&gt;
 &lt;i&gt;Texto en cursiva&lt;/i&gt;</code></pre>
-                </div>
-            </div>
-        </div>
+                                </div>
+                            </div>
+                        </div>
 
-        <!-- MARK Y SMALL -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingMark">
-                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseMark" aria-expanded="false"
-                    aria-controls="collapseMark">
-                    &lt;mark&gt; y &lt;small&gt;
-                </button>
-            </h2>
-            <div id="collapseMark" class="accordion-collapse collapse" aria-labelledby="headingMark"
-                data-bs-parent="#accordionEstructura">
-                <div class="accordion-body">
-                    <pre><code>&lt;mark&gt;Texto resaltado&lt;/mark&gt;
+                        <!-- MARK Y SMALL -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingMark">
+                                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseMark" aria-expanded="false"
+                                    aria-controls="collapseMark">
+                                    &lt;mark&gt; y &lt;small&gt;
+                                </button>
+                            </h2>
+                            <div id="collapseMark" class="accordion-collapse collapse" aria-labelledby="headingMark"
+                                data-bs-parent="#accordionEstructura">
+                                <div class="accordion-body">
+                                    <pre><code>&lt;mark&gt;Texto resaltado&lt;/mark&gt;
 &lt;small&gt;Texto pequeño&lt;/small&gt;</code></pre>
-                </div>
-            </div>
-        </div>
+                                </div>
+                            </div>
+                        </div>
 
-        <!-- DEL E INS -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingDel">
-                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseDel" aria-expanded="false"
-                    aria-controls="collapseDel">
-                    &lt;del&gt; e &lt;ins&gt;
-                </button>
-            </h2>
-            <div id="collapseDel" class="accordion-collapse collapse" aria-labelledby="headingDel"
-                data-bs-parent="#accordionEstructura">
-                <div class="accordion-body">
-                    <pre><code>&lt;del&gt;Precio anterior: $50&lt;/del&gt;
+                        <!-- DEL E INS -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingDel">
+                                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseDel" aria-expanded="false"
+                                    aria-controls="collapseDel">
+                                    &lt;del&gt; e &lt;ins&gt;
+                                </button>
+                            </h2>
+                            <div id="collapseDel" class="accordion-collapse collapse" aria-labelledby="headingDel"
+                                data-bs-parent="#accordionEstructura">
+                                <div class="accordion-body">
+                                    <pre><code>&lt;del&gt;Precio anterior: $50&lt;/del&gt;
 &lt;ins&gt;Precio actual: $30&lt;/ins&gt;</code></pre>
-                </div>
-            </div>
-        </div>
+                                </div>
+                            </div>
+                        </div>
 
-        <!-- SUB Y SUP -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSub">
-                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseSub" aria-expanded="false"
-                    aria-controls="collapseSub">
-                    &lt;sub&gt; y &lt;sup&gt;
-                </button>
-            </h2>
-            <div id="collapseSub" class="accordion-collapse collapse" aria-labelledby="headingSub"
-                data-bs-parent="#accordionEstructura">
-                <div class="accordion-body">
-                    <pre><code>H&lt;sub&gt;2&lt;/sub&gt;O
+                        <!-- SUB Y SUP -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSub">
+                                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseSub" aria-expanded="false"
+                                    aria-controls="collapseSub">
+                                    &lt;sub&gt; y &lt;sup&gt;
+                                </button>
+                            </h2>
+                            <div id="collapseSub" class="accordion-collapse collapse" aria-labelledby="headingSub"
+                                data-bs-parent="#accordionEstructura">
+                                <div class="accordion-body">
+                                    <pre><code>H&lt;sub&gt;2&lt;/sub&gt;O
 10&lt;sup&gt;2&lt;/sup&gt;</code></pre>
-                </div>
-            </div>
-        </div>
+                                </div>
+                            </div>
+                        </div>
 
-        <!-- BLOCKQUOTE Y Q -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingQuote">
-                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseQuote" aria-expanded="false"
-                    aria-controls="collapseQuote">
-                    &lt;blockquote&gt; y &lt;q&gt;
-                </button>
-            </h2>
-            <div id="collapseQuote" class="accordion-collapse collapse" aria-labelledby="headingQuote"
-                data-bs-parent="#accordionEstructura">
-                <div class="accordion-body">
-                    <pre><code>&lt;blockquote&gt;
+                        <!-- BLOCKQUOTE Y Q -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingQuote">
+                                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseQuote" aria-expanded="false"
+                                    aria-controls="collapseQuote">
+                                    &lt;blockquote&gt; y &lt;q&gt;
+                                </button>
+                            </h2>
+                            <div id="collapseQuote" class="accordion-collapse collapse" aria-labelledby="headingQuote"
+                                data-bs-parent="#accordionEstructura">
+                                <div class="accordion-body">
+                                    <pre><code>&lt;blockquote&gt;
   La educación es el arma más poderosa.
 &lt;/blockquote&gt;
 
 &lt;q&gt;El conocimiento es poder&lt;/q&gt;</code></pre>
-                </div>
-            </div>
-        </div>
+                                </div>
+                            </div>
+                        </div>
 
-        <!-- CODE Y PRE -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingCode">
-                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#collapseCode" aria-expanded="false"
-                    aria-controls="collapseCode">
-                    &lt;code&gt; y &lt;pre&gt;
-                </button>
-            </h2>
-            <div id="collapseCode" class="accordion-collapse collapse" aria-labelledby="headingCode"
-                data-bs-parent="#accordionEstructura">
-                <div class="accordion-body">
-                    <pre><code>&lt;code&gt;console.log("Hola");&lt;/code&gt;
+                        <!-- CODE Y PRE -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingCode">
+                                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseCode" aria-expanded="false"
+                                    aria-controls="collapseCode">
+                                    &lt;code&gt; y &lt;pre&gt;
+                                </button>
+                            </h2>
+                            <div id="collapseCode" class="accordion-collapse collapse" aria-labelledby="headingCode"
+                                data-bs-parent="#accordionEstructura">
+                                <div class="accordion-body">
+                                    <pre><code>&lt;code&gt;console.log("Hola");&lt;/code&gt;
 
 &lt;pre&gt;
 &lt;html&gt;
   &lt;body&gt;Hola Mundo&lt;/body&gt;
 &lt;/html&gt;
 &lt;/pre&gt;</code></pre>
-                </div>
-            </div>
-        </div>
+                                </div>
+                            </div>
+                        </div>
 
-    </div>
-</section>
+                    </div>
+                </section>
             </section>
 
         </section>
-<section class="aside" id="aside">
-            <h5>Navegación</h5>
-            <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#descripcion">Descripción</a></li>
-            <li class="nav-item"><a class="nav-link" href="#encabezados">Encabezados</a></li>
-            <li class="nav-item"><a class="nav-link" href="#parrafo">Párrafo</a></li>
-            <li class="nav-item"><a class="nav-link" href="#negrita">Negrita y Énfasis</a></li>
-            <li class="nav-item"><a class="nav-link" href="#resaltado">Resaltado</a></li>
-            <li class="nav-item"><a class="nav-link" href="#subsuper">Sub y Superíndice</a></li>
-            <li class="nav-item"><a class="nav-link" href="#citas">Citas</a></li>
-            <li class="nav-item"><a class="nav-link" href="#codigo">Código</a></li>
-        </ul>
-    </section>
+        <section class="layout">
+            <aside class="menu sticky-menu">
+                <h5>Navegación</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="#descripcion">Descripción</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#encabezados">Encabezados</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#parrafo">Párrafo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#negrita">Negrita y Énfasis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resaltado">Resaltado</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#subsuper">Sub y Superíndice</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#citas">Citas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#codigo">Código</a></li>
+                </ul>
+            </aside>
+        </section>
     </div>
 
     <div id="footer-container"></div>
 
     <script>
-        fetch('../Funciones/navbar-apartados.html')
-            .then(response => response.text())
+        fetch("/Funciones/navbar.html")
+            .then(res => res.text())
             .then(data => {
-                document.getElementById('navbar-container').innerHTML = data;
+                document.getElementById("navbar-container").innerHTML = data;
             });
-
+    </script>
+    <script>
         fetch('../Funciones/footer.html')
             .then(response => response.text())
             .then(data => {
@@ -331,4 +334,5 @@
 
     <script src="../Funciones/scroll.js"></script>
 </body>
+
 </html>

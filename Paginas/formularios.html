@@ -13,6 +13,10 @@
     <div id="navbar-container"></div>
 </head>
 
+    <link rel="shortcut icon" href="../Recursos/imagen.ico" />
+    <div id="navbar-container"></div>
+</head>
+
 <body>
     <div class="contentIndex">
         <section class="informacion">
@@ -287,8 +291,11 @@
                     </div>
                 </div>
             </section>
+
         </section>
-        <section class="aside sticky-aside">
+
+    <section class="section-layout">
+         <aside class="aside sticky-aside">
             <h5>Navegación</h5>
             <ul class="nav flex-column">
                 <li class="nav-item"><a class="nav-link" href="#text"  style="font-size: 12px;">Texto</a></li>
@@ -298,15 +305,16 @@
                 <li class="nav-item"><a class="nav-link" href="#select"  style="font-size: 12px;">Menú desplegable</a></li>
                 <li class="nav-item"><a class="nav-link" href="#range"  style="font-size: 12px;">Rango</a></li>
             </ul>
-        </section>
+         </aside>
+    </section>
     </div>
 </body>
 
 <script>
-    fetch('../Funciones/navbar-apartados.html')
-        .then(response => response.text())
+    fetch("/Funciones/navbar.html")
+        .then(res => res.text())
         .then(data => {
-            document.getElementById('navbar-container').innerHTML = data;
+            document.getElementById("navbar-container").innerHTML = data;
         });
 </script>
 

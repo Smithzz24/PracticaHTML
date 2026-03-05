@@ -9,124 +9,132 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../Estilos/style.css">
     <link rel="stylesheet" href="../Funciones/funciones.css">
-    <link rel="shortcut icon" href="../Recursos/imagen.ico"/>
+    <link rel="shortcut icon" href="../Recursos/imagen.ico" />
     <div id="navbar-container"></div>
 </head>
 
 <body>
     <div class="contentIndex">
-        <section class="informacion">
-    <section class="pad150">
-        <h1 id="descripcion" class="titulos">Tablas</h1>
-        <p class="texto" style="font-size: 15px;">Las tablas permiten organizar datos en filas y columnas usando
-            distintas etiquetas. Aquí encontrarás explicaciones y ejemplos estilizados con Bootstrap, como en un
-            artículo de blog.</p>
-    </section>
+        <section class="informacion" id="introduccion">
+            <section class="pad150">
+                <h1 id="descripcion" class="titulos">Tablas</h1>
+                <p class="texto" style="font-size: 15px;">Las tablas permiten organizar datos en filas y columnas usando
+                    distintas etiquetas. Aquí encontrarás explicaciones y ejemplos estilizados con Bootstrap, como en un
+                    artículo de blog.</p>
+            </section>
 
-    <section class="pad150 section-explain">
-        <h2 id="etiquetas" class="semititulos" style="color: black; text-align: left; font-size: 25px; margin-top: 20px;">Etiquetas
-            recomendadas</h2>
-        <p class="texto" style="font-size: 15px;">Las etiquetas más comunes para construir tablas son las siguientes:
-        </p>
-        <div class="container text-center">
-            <div class="row justify-content-evenly">
-                <div class="col-4">
-                    <h3>&lt;table&gt;</h3>
-                    <p>Elemento contenedor principal de la tabla.</p>
+            <section class="pad150 section-explain">
+                <h2 id="etiquetas" class="semititulos"
+                    style="color: black; text-align: left; font-size: 25px; margin-top: 20px;">Etiquetas
+                    recomendadas</h2>
+                <p class="texto" style="font-size: 15px;">Las etiquetas más comunes para construir tablas son las
+                    siguientes:
+                </p>
+                <div class="container text-center">
+                    <div class="row justify-content-evenly">
+                        <div class="col-4">
+                            <h3>&lt;table&gt;</h3>
+                            <p>Elemento contenedor principal de la tabla.</p>
+                        </div>
+                        <div class="col-4">
+                            <h3>&lt;tr&gt;</h3>
+                            <p>Define una fila de la tabla.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-evenly">
+                        <div class="col-4">
+                            <h3>&lt;th&gt;</h3>
+                            <p>Celda de cabecera con texto en negrita.</p>
+                        </div>
+                        <div class="col-4">
+                            <h3>&lt;td&gt;</h3>
+                            <p>Celda normal que contiene datos.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-evenly">
+                        <div class="col-4">
+                            <h3>&lt;thead&gt;</h3>
+                            <p>Sección con las filas de encabezado.</p>
+                        </div>
+                        <div class="col-4">
+                            <h3>&lt;tbody&gt;</h3>
+                            <p>Sección con las filas de contenido principal.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <h3>&lt;tr&gt;</h3>
-                    <p>Define una fila de la tabla.</p>
-                </div>
-            </div>
-            <div class="row justify-content-evenly">
-                <div class="col-4">
-                    <h3>&lt;th&gt;</h3>
-                    <p>Celda de cabecera con texto en negrita.</p>
-                </div>
-                <div class="col-4">
-                    <h3>&lt;td&gt;</h3>
-                    <p>Celda normal que contiene datos.</p>
-                </div>
-            </div>
-            <div class="row justify-content-evenly">
-                <div class="col-4">
-                    <h3>&lt;thead&gt;</h3>
-                    <p>Sección con las filas de encabezado.</p>
-                </div>
-                <div class="col-4">
-                    <h3>&lt;tbody&gt;</h3>
-                    <p>Sección con las filas de contenido principal.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <section class="pad150">
-        <h2 id="ejemplos" class="semititulos" style="color: black; text-align: left; font-size: 25px; margin-top: 20px;">Ejemplos de
-            tablas</h2>
-        <p class="texto" style="font-size: 15px;">A continuación dos ejemplos simples de tablas construidas con las
-            etiquetas vistas arriba. El primero usa solo &lt;table&gt;, &lt;tr&gt;, &lt;th&gt; y &lt;td&gt;, el segundo
-            incorpora &lt;thead&gt; y &lt;tbody&gt;.</p>
-        <div class="container text-center">
-            <div class="row justify-content-evenly">
-                <div class="col-4">
-                    <h4 id="tabla-basica">Tabla básica</h4>
-                    <table class="table table-bordered">
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Edad</th>
-                        </tr>
-                        <tr>
-                            <td>Ana</td>
-                            <td>28</td>
-                        </tr>
-                        <tr>
-                            <td>Carlos</td>
-                            <td>35</td>
-                        </tr>
-                    </table>
+            <section class="pad150">
+                <h2 id="ejemplos" class="semititulos"
+                    style="color: black; text-align: left; font-size: 25px; margin-top: 20px;">Ejemplos de
+                    tablas</h2>
+                <p class="texto" style="font-size: 15px;">A continuación dos ejemplos simples de tablas construidas con
+                    las
+                    etiquetas vistas arriba. El primero usa solo &lt;table&gt;, &lt;tr&gt;, &lt;th&gt; y &lt;td&gt;, el
+                    segundo
+                    incorpora &lt;thead&gt; y &lt;tbody&gt;.</p>
+                <div class="container text-center">
+                    <div class="row justify-content-evenly">
+                        <div class="col-4">
+                            <h4 id="tabla-basica">Tabla básica</h4>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Edad</th>
+                                </tr>
+                                <tr>
+                                    <td>Ana</td>
+                                    <td>28</td>
+                                </tr>
+                                <tr>
+                                    <td>Carlos</td>
+                                    <td>35</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-4">
+                            <h4 id="tabla-thead-tbody">Tabla con thead/tbody</h4>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Producto</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Libro</td>
+                                        <td>$15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cuaderno</td>
+                                        <td>$5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <h4 id="tabla-thead-tbody">Tabla con thead/tbody</h4>
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>Producto</th>
-                                <th>Precio</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Libro</td>
-                                <td>$15</td>
-                            </tr>
-                            <tr>
-                                <td>Cuaderno</td>
-                                <td>$5</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <section class="pad150" style="padding-left: 150px; padding-right: 150px; font-size: 14px; margin-top: 50px;">
-        <div class="accordion" id="accordionTables">
-            <!-- Item de tabla basica -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingBasicTable">
-                    <button class="accordion-button collapsed" style="font-size: 17px;" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseBasicTable" aria-expanded="false" aria-controls="collapseBasicTable">
-                        Tabla básica
-                    </button>
-                </h2>
-                <div id="collapseBasicTable" class="accordion-collapse collapse" aria-labelledby="headingBasicTable"
-                    data-bs-parent="#accordionTables">
-                    <div class="accordion-body">
-                        <p>La estructura mínima: <code>&lt;table&gt; &lt;tr&gt; &lt;th&gt; &lt;td&gt;</code>.</p>
-                        <pre><code>&lt;table class="table table-bordered"&gt;
+            <section class="pad150"
+                style="padding-left: 150px; padding-right: 150px; font-size: 14px; margin-top: 50px;">
+                <div class="accordion" id="accordionTables">
+                    <!-- Item de tabla basica -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingBasicTable">
+                            <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseBasicTable" aria-expanded="false"
+                                aria-controls="collapseBasicTable">
+                                Tabla básica
+                            </button>
+                        </h2>
+                        <div id="collapseBasicTable" class="accordion-collapse collapse"
+                            aria-labelledby="headingBasicTable" data-bs-parent="#accordionTables">
+                            <div class="accordion-body">
+                                <p>La estructura mínima: <code>&lt;table&gt; &lt;tr&gt; &lt;th&gt; &lt;td&gt;</code>.
+                                </p>
+                                <pre><code>&lt;table class="table table-bordered"&gt;
   &lt;tr&gt;
     &lt;th&gt;Nombre&lt;/th&gt;
     &lt;th&gt;Edad&lt;/th&gt;
@@ -136,22 +144,23 @@
     &lt;td&gt;28&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;</code></pre>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- thead/tbody -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTheadTbody">
-                    <button class="accordion-button collapsed" style="font-size: 17px;" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTheadTbody" aria-expanded="false" aria-controls="collapseTheadTbody">
-                        Tabla con &lt;thead&gt; y &lt;tbody&gt;
-                    </button>
-                </h2>
-                <div id="collapseTheadTbody" class="accordion-collapse collapse" aria-labelledby="headingTheadTbody"
-                    data-bs-parent="#accordionTables">
-                    <div class="accordion-body">
-                        <p>Separa encabezados y cuerpo para mayor accesibilidad y estilos.</p>
-                        <pre><code>&lt;table class="table table-striped"&gt;
+                    <!-- thead/tbody -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTheadTbody">
+                            <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTheadTbody" aria-expanded="false"
+                                aria-controls="collapseTheadTbody">
+                                Tabla con &lt;thead&gt; y &lt;tbody&gt;
+                            </button>
+                        </h2>
+                        <div id="collapseTheadTbody" class="accordion-collapse collapse"
+                            aria-labelledby="headingTheadTbody" data-bs-parent="#accordionTables">
+                            <div class="accordion-body">
+                                <p>Separa encabezados y cuerpo para mayor accesibilidad y estilos.</p>
+                                <pre><code>&lt;table class="table table-striped"&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt;Producto&lt;/th&gt;
@@ -165,88 +174,92 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- responsive table item -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingResponsive">
-                    <button class="accordion-button collapsed" style="font-size: 17px;" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseResponsive" aria-expanded="false" aria-controls="collapseResponsive">
-                        Tabla responsiva
-                    </button>
-                </h2>
-                <div id="collapseResponsive" class="accordion-collapse collapse" aria-labelledby="headingResponsive"
-                    data-bs-parent="#accordionTables">
-                    <div class="accordion-body">
-                        <p>Envuelta en <code>&lt;div class="table-responsive"&gt;</code> para móviles.</p>
-                        <pre><code>&lt;div class="table-responsive"&gt;
+                    <!-- responsive table item -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingResponsive">
+                            <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseResponsive" aria-expanded="false"
+                                aria-controls="collapseResponsive">
+                                Tabla responsiva
+                            </button>
+                        </h2>
+                        <div id="collapseResponsive" class="accordion-collapse collapse"
+                            aria-labelledby="headingResponsive" data-bs-parent="#accordionTables">
+                            <div class="accordion-body">
+                                <p>Envuelta en <code>&lt;div class="table-responsive"&gt;</code> para móviles.</p>
+                                <pre><code>&lt;div class="table-responsive"&gt;
   &lt;table class="table"&gt;...&lt;/table&gt;
 &lt;/div&gt;</code></pre>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- colspan/rowspan item -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSpan">
-                    <button class="accordion-button collapsed" style="font-size: 17px;" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseSpan" aria-expanded="false" aria-controls="collapseSpan">
-                        Celdas fusionadas
-                    </button>
-                </h2>
-                <div id="collapseSpan" class="accordion-collapse collapse" aria-labelledby="headingSpan"
-                    data-bs-parent="#accordionTables">
-                    <div class="accordion-body">
-                        <p>Usa <code>colspan</code> o <code>rowspan</code> para unir celdas.</p>
-                        <pre><code>&lt;table class="table"&gt;
+                    <!-- colspan/rowspan item -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSpan">
+                            <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseSpan" aria-expanded="false"
+                                aria-controls="collapseSpan">
+                                Celdas fusionadas
+                            </button>
+                        </h2>
+                        <div id="collapseSpan" class="accordion-collapse collapse" aria-labelledby="headingSpan"
+                            data-bs-parent="#accordionTables">
+                            <div class="accordion-body">
+                                <p>Usa <code>colspan</code> o <code>rowspan</code> para unir celdas.</p>
+                                <pre><code>&lt;table class="table"&gt;
   &lt;tr&gt;
     &lt;th colspan="2"&gt;Título&lt;/th&gt;
   &lt;/tr&gt;
 &lt;/table&gt;</code></pre>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <br><br><br>
+            </section>
+            <br><br><br>
 
         </section>
-        <section class="aside">
-            <h5>Navegación</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link" href="#descripcion">Descripción</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#etiquetas">Etiquetas recomendadas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#ejemplos">Ejemplos de tablas</a>
-                </li>
+        <section class="layout">
+            <aside class="menu sticky-menu">
+                <h5>Navegación</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#descripcion">Descripción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#etiquetas">Etiquetas recomendadas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ejemplos">Ejemplos de tablas</a>
+                    </li>
 
-                <li class="nav-item mt-2"><strong>Tipos</strong></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#collapseBasicTable">Tabla básica</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#collapseTheadTbody">Tabla thead/tbody</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#collapseResponsive">Tabla responsiva</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#collapseSpan">Celdas fusionadas</a>
-                </li>
-            </ul>
+                    <li class="nav-item mt-2"><strong>Tipos</strong></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#collapseBasicTable">Tabla básica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#collapseTheadTbody">Tabla thead/tbody</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#collapseResponsive">Tabla responsiva</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#collapseSpan">Celdas fusionadas</a>
+                    </li>
+                </ul>
+            </aside>
         </section>
     </div>
 
 </body>
 <script>
-    fetch('../Funciones/navbar-apartados.html')
-        .then(response => response.text())
+    fetch("/Funciones/navbar.html")
+        .then(res => res.text())
         .then(data => {
-            document.getElementById('navbar-container').innerHTML = data;
+            document.getElementById("navbar-container").innerHTML = data;
         });
 </script>
 <script>
