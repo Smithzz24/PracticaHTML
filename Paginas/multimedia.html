@@ -42,9 +42,22 @@
                     <li><strong>loading</strong></li>
                 </ul>
 
-                <div class="border p-3 bg-light">
-                    <img src="https://play-lh.googleusercontent.com/d7jNipDFeitiZWFjsZliZ-aX3fWC1rBRvvXK5wONsDfVWC9pAXotdFju5fsK_K_5U-c"
-                        alt="Ejemplo Imagen">
+                <div class="grid-semantica">
+                    <div class="item-semantica">
+                        <h1 class="titulo-codigo"
+                            style="font-size: 38px; font-weight: 700; text-align: left; color: #569CD6;">Código:</h1>
+                        <div class="codigo"
+                            style="text-align: left; padding-bottom: 3cm; padding-top: 3cm; font-size: 20px;">
+                            &lt;img src="foto.jpg" alt="Descripción de la imagen"
+                            width="300" height="200"&gt;
+                        </div>
+                    </div>
+                    <div class="item-semantica">
+                        <h1 class="titulo-codigo"
+                            style="font-size: 38px; font-weight: 700; text-align: left; color: #569CD6;">Ejemplo:</h1>
+                        <img src="https://play-lh.googleusercontent.com/d7jNipDFeitiZWFjsZliZ-aX3fWC1rBRvvXK5wONsDfVWC9pAXotdFju5fsK_K_5U-c"
+                            alt="Ejemplo Imagen">
+                    </div>
                 </div>
             </section>
 
@@ -62,11 +75,26 @@
                     <li>preload</li>
                 </ul>
 
-                <div class="border p-3 bg-light">
-                    <audio controls>
-                        <source src="../Recursos/audioEjemplo.mp3" type="audio/mpeg">
-                        Tu navegador no soporta audio.
-                    </audio>
+                <div class="grid-semantica">
+                    <div class="item-semantica">
+                        <h1 class="titulo-codigo"
+                            style="font-size: 38px; font-weight: 700; text-align: left; color: #569CD6;">Código:</h1>
+                        <div class="codigo"
+                            style="text-align: left; padding-bottom: 3cm; padding-top: 3cm; font-size: 20px;">
+                            &lt;audio controls&gt;
+                            &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+                            Tu navegador no soporta audio.
+                            &lt;/audio&gt;
+                        </div>
+                    </div>
+                    <div class="item-semantica">
+                        <h1 class="titulo-codigo"
+                            style="font-size: 38px; font-weight: 700; text-align: left; color: #569CD6;">Ejemplo:</h1>
+                        <audio controls>
+                            <source src="../Recursos/audioEjemplo.mp3" type="audio/mpeg">
+                            Tu navegador no soporta audio.
+                        </audio>
+                    </div>
                 </div>
             </section>
 
@@ -85,11 +113,26 @@
                     <li>width / height</li>
                 </ul>
 
-                <div class="border p-3 bg-light">
-                    <video width="560" controls autoplay loop muted>
-                        <source src="../Recursos/videoEjemplo.mp4" type="video/mp4">
-                        Tu navegador no soporta video.
-                    </video>
+                <div class="grid-semantica">
+                    <div class="item-semantica">
+                        <h1 class="titulo-codigo"
+                            style="font-size: 38px; font-weight: 700; text-align: left; color: #569CD6;">Código:</h1>
+                        <div class="codigo"
+                            style="text-align: left; padding-bottom: 3cm; padding-top: 3cm; font-size: 20px;">
+                            &lt;video controls width="400" poster="preview.jpg"&gt;
+                            &lt;source src="video.mp4" type="video/mp4"&gt;
+                            Tu navegador no soporta video.
+                            &lt;/video&gt;
+                        </div>
+                    </div>
+                    <div class="item-semantica">
+                        <h1 class="titulo-codigo"
+                            style="font-size: 38px; font-weight: 700; text-align: left; color: #569CD6;">Ejemplo:</h1>
+                        <video width="560" controls autoplay loop muted>
+                            <source src="../Recursos/videoEjemplo.mp4" type="video/mp4">
+                            Tu navegador no soporta video.
+                        </video>
+                    </div>
                 </div>
             </section>
 
@@ -102,6 +145,28 @@
                     <li><strong>source:</strong> src, type</li>
                     <li><strong>track:</strong> src, kind, srclang, label</li>
                 </ul>
+
+                <div class="grid-semantica">
+                    <div class="item-semantica">
+                        <h1 class="titulo-codigo"
+                            style="font-size: 38px; font-weight: 700; text-align: left; color: #569CD6;">Código:</h1>
+                        <div class="codigo"
+                            style="text-align: left; padding-bottom: 3cm; padding-top: 3cm; font-size: 20px;">
+                            &lt;video controls&gt;
+                            &lt;source src="video.mp4" type="video/mp4"&gt;
+                            &lt;source src="video.webm" type="video/webm"&gt;
+                            &lt;track src="subtitulos.vtt" kind="subtitles"
+                            srclang="es" label="Español"&gt;
+                            &lt;/video&gt;
+                        </div>
+                    </div>
+                    <div class="item-semantica">
+                        <h1 class="titulo-codigo"
+                            style="font-size: 38px; font-weight: 700; text-align: left; color: #569CD6;">Ejemplo:</h1>
+                        <p>Estos elementos se usan dentro de &lt;audio&gt; o &lt;video&gt; para proporcionar múltiples
+                            formatos y subtítulos.</p>
+                    </div>
+                </div>
             </section>
 
             <!-- FIGURE -->
@@ -109,12 +174,27 @@
                 <h2>&lt;figure&gt; y &lt;figcaption&gt;</h2>
                 <p>Agrupan contenido multimedia con una descripción.</p>
 
-                <div class="border p-3 bg-light">
-                    <figure>
-                        <img src="https://i0.wp.com/lavidaesunvideojuego.com/wp-content/uploads/2020/07/Cuphead-y-su-procedencia-japonesa-lavidaesunvideojuego.jpg?w=1472&ssl=1"
-                            width="560" alt="Ejemplo">
-                        <figcaption>Descripción de la imagen</figcaption>
-                    </figure>
+                <div class="grid-semantica">
+                    <div class="item-semantica">
+                        <h1 class="titulo-codigo"
+                            style="font-size: 38px; font-weight: 700; text-align: left; color: #569CD6;">Código:</h1>
+                        <div class="codigo"
+                            style="text-align: left; padding-bottom: 3cm; padding-top: 3cm; font-size: 20px;">
+                            &lt;figure&gt;
+                            &lt;img src="imagen.jpg" alt="Paisaje"&gt;
+                            &lt;figcaption&gt;Descripción de la imagen&lt;/figcaption&gt;
+                            &lt;/figure&gt;
+                        </div>
+                    </div>
+                    <div class="item-semantica">
+                        <h1 class="titulo-codigo"
+                            style="font-size: 38px; font-weight: 700; text-align: left; color: #569CD6;">Ejemplo:</h1>
+                        <figure>
+                            <img src="https://i0.wp.com/lavidaesunvideojuego.com/wp-content/uploads/2020/07/Cuphead-y-su-procedencia-japonesa-lavidaesunvideojuego.jpg?w=1472&ssl=1"
+                                width="560" alt="Ejemplo">
+                            <figcaption>Descripción de la imagen</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </section>
 
@@ -123,8 +203,21 @@
                 <h2>&lt;canvas&gt;</h2>
                 <p>Permite dibujar gráficos dinámicos usando JavaScript.</p>
 
-                <div class="border p-3 bg-light">
-                    <canvas width="200" height="100" style="border:1px solid black;"></canvas>
+                <div class="grid-semantica">
+                    <div class="item-semantica">
+                        <h1 class="titulo-codigo"
+                            style="font-size: 38px; font-weight: 700; text-align: left; color: #569CD6;">Código:</h1>
+                        <div class="codigo"
+                            style="text-align: left; padding-bottom: 3cm; padding-top: 3cm; font-size: 20px;">
+                            &lt;canvas id="miCanvas" width="300" height="150"&gt;
+                            &lt;/canvas&gt;
+                        </div>
+                    </div>
+                    <div class="item-semantica">
+                        <h1 class="titulo-codigo"
+                            style="font-size: 38px; font-weight: 700; text-align: left; color: #569CD6;">Ejemplo:</h1>
+                        <canvas width="200" height="100" style="border:1px solid black;"></canvas>
+                    </div>
                 </div>
             </section>
 
@@ -133,10 +226,25 @@
                 <h2>&lt;svg&gt;</h2>
                 <p>Permite crear gráficos vectoriales.</p>
 
-                <div class="border p-3 bg-light">
-                    <svg width="100" height="100">
-                        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="lightblue" />
-                    </svg>
+                <div class="grid-semantica">
+                    <div class="item-semantica">
+                        <h1 class="titulo-codigo"
+                            style="font-size: 38px; font-weight: 700; text-align: left; color: #569CD6;">Código:</h1>
+                        <div class="codigo"
+                            style="text-align: left; padding-bottom: 3cm; padding-top: 3cm; font-size: 20px;">
+                            &lt;svg width="100" height="100"&gt;
+                            &lt;circle cx="50" cy="50" r="40"
+                            stroke="black" fill="lightblue"/&gt;
+                            &lt;/svg&gt;
+                        </div>
+                    </div>
+                    <div class="item-semantica">
+                        <h1 class="titulo-codigo"
+                            style="font-size: 38px; font-weight: 700; text-align: left; color: #569CD6;">Ejemplo:</h1>
+                        <svg width="100" height="100">
+                            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="lightblue" />
+                        </svg>
+                    </div>
                 </div>
             </section>
 
@@ -152,12 +260,27 @@
                     <li>allowfullscreen</li>
                 </ul>
 
-                <div class="border p-3 bg-light">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NN-9SQXoi50?si=xV5ZuL7at6kqAQ5l"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </iframe>
+                <div class="grid-semantica">
+                    <div class="item-semantica">
+                        <h1 class="titulo-codigo"
+                            style="font-size: 38px; font-weight: 700; text-align: left; color: #569CD6;">Código:</h1>
+                        <div class="codigo"
+                            style="text-align: left; padding-bottom: 3cm; padding-top: 3cm; font-size: 20px;">
+                            &lt;iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/ID"
+                            allowfullscreen&gt;
+                            &lt;/iframe&gt;
+                        </div>
+                    </div>
+                    <div class="item-semantica">
+                        <h1 class="titulo-codigo"
+                            style="font-size: 38px; font-weight: 700; text-align: left; color: #569CD6;">Ejemplo:</h1>
+                        <iframe width="450" height="350"
+                            src="https://www.youtube.com/embed/NN-9SQXoi50?si=xV5ZuL7at6kqAQ5l"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </section>
 
@@ -166,172 +289,31 @@
                 <h2>&lt;code&gt; y &lt;pre&gt;</h2>
                 <p>Permiten mostrar fragmentos de código respetando formato y espacios.</p>
 
-                <div class="border p-3 bg-light">
-                    <p>Código en línea: <code>&lt;img src="imagen.jpg" alt="Descripción"&gt;</code></p>
+                <div class="grid-semantica">
+                    <div class="item-semantica">
+                        <h1 class="titulo-codigo"
+                            style="font-size: 38px; font-weight: 700; text-align: left; color: #569CD6;">Código:</h1>
+                        <div class="codigo"
+                            style="text-align: left; padding-bottom: 3cm; padding-top: 3cm; font-size: 20px;">
+                            &lt;p&gt;Código en línea: &lt;code&gt;&amp;lt;img src="imagen.jpg"
+                            alt="Descripción"&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
-                    <pre><code>&lt;video controls&gt;
+                            &lt;pre&gt;&lt;code&gt;&amp;lt;video controls&amp;gt;
+                            &amp;lt;source src="video.mp4" type="video/mp4"&amp;gt;
+                            &amp;lt;/video&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+                        </div>
+                    </div>
+                    <div class="item-semantica">
+                        <h1 class="titulo-codigo"
+                            style="font-size: 38px; font-weight: 700; text-align: left; color: #569CD6;">Ejemplo:</h1>
+                        <p>Código en línea: <code>&lt;img src="imagen.jpg" alt="Descripción"&gt;</code></p>
+
+                        <pre><code>&lt;video controls&gt;
   &lt;source src="video.mp4" type="video/mp4"&gt;
 &lt;/video&gt;</code></pre>
+                    </div>
                 </div>
 
-                <h1 class="semiTitulos text-center">Ejemplos en codigo</h1>
-
-                <section class="pad150"
-                    style="padding-left: 150px; padding-right: 150px; font-size: 14px; margin-top: 50px;">
-                    <div class="accordion" id="accordionMultimedia">
-
-                        <!-- IMG -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingImg">
-                                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseImg">
-                                    &lt;img&gt;
-                                </button>
-                            </h2>
-                            <div id="collapseImg" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionMultimedia">
-                                <div class="accordion-body">
-                                    <pre><code>&lt;img src="foto.jpg" alt="Descripción de la imagen"
-width="300" height="200"&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- AUDIO -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingAudio">
-                                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseAudio">
-                                    &lt;audio&gt;
-                                </button>
-                            </h2>
-                            <div id="collapseAudio" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionMultimedia">
-                                <div class="accordion-body">
-                                    <pre><code>&lt;audio controls&gt;
-  &lt;source src="audio.mp3" type="audio/mpeg"&gt;
-  Tu navegador no soporta audio.
-&lt;/audio&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- VIDEO -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingVideo">
-                                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseVideo">
-                                    &lt;video&gt;
-                                </button>
-                            </h2>
-                            <div id="collapseVideo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionMultimedia">
-                                <div class="accordion-body">
-                                    <pre><code>&lt;video controls width="400" poster="preview.jpg"&gt;
-  &lt;source src="video.mp4" type="video/mp4"&gt;
-  Tu navegador no soporta video.
-&lt;/video&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- SOURCE Y TRACK -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingSource">
-                                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseSource">
-                                    &lt;source&gt; y &lt;track&gt;
-                                </button>
-                            </h2>
-                            <div id="collapseSource" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionMultimedia">
-                                <div class="accordion-body">
-                                    <pre><code>&lt;video controls&gt;
-  &lt;source src="video.mp4" type="video/mp4"&gt;
-  &lt;source src="video.webm" type="video/webm"&gt;
-  &lt;track src="subtitulos.vtt" kind="subtitles"
-         srclang="es" label="Español"&gt;
-&lt;/video&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FIGURE Y FIGCAPTION -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFigure">
-                                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseFigure">
-                                    &lt;figure&gt; y &lt;figcaption&gt;
-                                </button>
-                            </h2>
-                            <div id="collapseFigure" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionMultimedia">
-                                <div class="accordion-body">
-                                    <pre><code>&lt;figure&gt;
-  &lt;img src="imagen.jpg" alt="Paisaje"&gt;
-  &lt;figcaption&gt;Descripción de la imagen&lt;/figcaption&gt;
-&lt;/figure&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- CANVAS -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingCanvas">
-                                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseCanvas">
-                                    &lt;canvas&gt;
-                                </button>
-                            </h2>
-                            <div id="collapseCanvas" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionMultimedia">
-                                <div class="accordion-body">
-                                    <pre><code>&lt;canvas id="miCanvas" width="300" height="150"&gt;
-&lt;/canvas&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- SVG -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingSvg">
-                                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseSvg">
-                                    &lt;svg&gt;
-                                </button>
-                            </h2>
-                            <div id="collapseSvg" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionMultimedia">
-                                <div class="accordion-body">
-                                    <pre><code>&lt;svg width="100" height="100"&gt;
-  &lt;circle cx="50" cy="50" r="40"
-          stroke="black" fill="lightblue"/&gt;
-&lt;/svg&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- IFRAME -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingIframe">
-                                <button class="accordion-button collapsed" style="font-size: 17px;" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseIframe">
-                                    &lt;iframe&gt;
-                                </button>
-                            </h2>
-                            <div id="collapseIframe" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionMultimedia">
-                                <div class="accordion-body">
-                                    <pre><code>&lt;iframe width="560" height="315"
-src="https://www.youtube.com/embed/ID"
-allowfullscreen&gt;
-&lt;/iframe&gt;</code></pre>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
             </section>
 
         </section>
@@ -349,7 +331,7 @@ allowfullscreen&gt;
                         <li class="nav-item"><a class="nav-link" href="#canvas">Canvas</a></li>
                         <li class="nav-item"><a class="nav-link" href="#svg">SVG</a></li>
                         <li class="nav-item"><a class="nav-link" href="#iframe">Iframe</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#codigo">Codigo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#codigo">Code</a></li>
                     </ul>
                 </aside>
             </section>
