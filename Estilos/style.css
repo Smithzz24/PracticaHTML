@@ -159,22 +159,37 @@ a {
     flex-wrap: wrap;
 }
 
-.aside {
-    flex: 2;
-    width: 250px;
-    padding: 20px;
+.layout {
+
     background-color: #abd9ff;
-    top: 20px;
-    height: fit-content;
+    font-size: 20px;
+    display: flex;
+    border-radius: 10px;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
 }
 
-.sticky-aside {
+.menu {
+    flex: 2;
+    width: 350px;
+    padding: 20px;
+    top: 20px;
+    height: fit-content;
+    position: sticky;
+}
+
+/* cuando quieras que quede pegado al hacer scroll */
+.sticky-menu {
     position: sticky;
     top: 0;
     width: 250px;
     z-index: 999;
 }
 
+/* si tienes un navbar superior fijo */
 .sticky-navbar {
     position: fixed;
     top: 0;
@@ -182,7 +197,7 @@ a {
     z-index: 10000;
 }
 
-.aside h5 {
+.menu h5 {
     font-weight: bold;
     margin-bottom: 15px;
     color: #0d6efd;
@@ -191,17 +206,17 @@ a {
     letter-spacing: 1px;
 }
 
-.aside ul {
+.menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.aside ul li {
+.menu ul li {
     margin-bottom: 8px;
 }
 
-.aside ul li a {
+.menu ul li a {
     text-decoration: none;
     color: #333;
     font-size: 14px;
@@ -209,6 +224,11 @@ a {
     display: block;
     border-radius: 6px;
     transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #0d6efd;
+    color: white;
 }
 
 .texto {
