@@ -1,30 +1,20 @@
-/* filepath: c:\Users\Smith\Desktop\ADSO\carlos\PracticaHTML\Estilos\style.css */
+/* ===== ESTILOS UNIFICADOS Y OPTIMIZADOS ===== */
+
+/* ===== ESTILOS GENERALES ===== */
 header {
-    background-color: #007acc;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    background-color: #1e3a5f;
+    padding: 20px;
     text-align: center;
     color: white;
 }
 
 body {
-    background-color: #f0f8ff;
+    background-color: #f5f7fa;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #1c1818;
+    color: #2d3748;
     margin: 0;
     padding: 0;
-}
-
-.contentIndex {
-    margin: 20px;
-    padding-left: 100px;
-    display: flex;
-    align-items: flex-start;
-    height: 100%;
-}
-
-.content {
-    margin: 40px;
+    line-height: 1.6;
 }
 
 a {
@@ -32,17 +22,110 @@ a {
     color: inherit;
 }
 
-.ejemplo {
+/* ===== LAYOUT PRINCIPAL ===== */
+.contentIndex {
+    margin: 20px;
+    padding-left: 100px;
     display: flex;
-    height: fit-content;
-    width: 100%;
-    margin-top: 20px;
-    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    margin: 40px;
 }
 
 .informacion {
     flex: 8;
+    min-width: 0;
     padding-right: 20px;
+}
+
+/* ===== TIPOGRAFÍA ===== */
+.titulos {
+    font-size: 48px;
+    font-weight: 700;
+    color: #569CD6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.semititulos {
+    font-size: 32px;
+    font-weight: 600;
+    color: #569CD6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.textoEspecial {
+    font-size: 24px;
+    color: #4a90e2;
+    font-weight: 600;
+}
+
+.textoIndex {
+    font-size: 18px;
+    color: #4a5568;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+/* ===== INTRODUCCIONES ===== */
+.introduccion {
+    margin-bottom: 20px;
+}
+
+.introduccion p {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    color: #718096;
+    margin-bottom: 20px;
+}
+
+/* ===== SECCIONES DE CONTENIDO ===== */
+.pad150 {
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-bottom: 30px;
+}
+
+.pad120 {
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-bottom: 30px;
+}
+
+.section-explain {
+    margin-bottom: 40px;
+}
+
+.section-explain h2 {
+    color: #2d3748;
+    text-align: left;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.section-explain .texto {
+    font-size: 16px;
+    color: #4a5568;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+/* ===== EJEMPLOS Y CÓDIGO ===== */
+.ejemplo {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .codigo {
@@ -51,10 +134,9 @@ a {
     padding: 20px;
     border-radius: 8px;
     font-family: Consolas, monospace;
-    font-size: 20px;
+    font-size: 14px;
     color: #d4d4d4;
     overflow-x: auto;
-    margin-right: 20px;
 }
 
 .resultado {
@@ -62,160 +144,50 @@ a {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    font-size: 20px;
-    margin-right: 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
 }
 
 .resultadoTitulo {
     margin-top: -60px;
-}
-
-.titulos {
-    font-size: 60px;
-    font-weight: bold;
-    align-self: center;
-    color: #007acc;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.textoEspecial {
-    font-size: 28px;
-    line-height: 1.6;
-    color: #c40505;
-    font-weight: bold;
-}
-
-.textoIndex {
     font-size: 20px;
-    line-height: 1.6;
-    color: #333333;
-    margin-bottom: 30px;
-    font-weight: 500;
-}
-
-.semititulos {
-    font-size: 30px;
-    font-weight: bold;
-    color: #007acc;
-    margin-bottom: 20px;
-    text-align: center;
-    padding-left: 150px;
-    padding-right: 150px;
-}
-
-.introduccion {
-    text-align: center;
-    font-weight: 350;
-}
-
-#textoInformativo {
-    margin-left: 40px;
-    margin-right: 40px;
-    text-align: initial;
-    font-size: 15px;
-}
-
-.tag {
+    font-weight: 600;
     color: #569CD6;
 }
 
-.attr {
-    color: #9CDCFE;
-}
-
-.value {
-    color: #CE9178;
-}
-
-#NavbarCustom {
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-#apartado1 {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    font-size: 16px;
-}
-
-#formulario1 {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: left;
-}
-
-.tipos {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    height: fit-content;
-    flex-wrap: wrap;
-}
-
+/* ===== SIDEBAR STICKY ===== */
 .layout {
-
-    background-color: #abd9ff;
-    font-size: 20px;
+    background-color: #f5f7fa;
+    font-size: 18px;
     display: flex;
-    border-radius: 10px;
     align-items: flex-start;
-    gap: 40px;
-    max-width: 1000px;
+    gap: 30px;
+    max-width: 1400px;
     margin: 40px auto;
     padding: 30px;
 }
 
 .menu {
     flex: 2;
-    width: 350px;
     padding: 20px;
+    position: sticky;
     top: 20px;
     height: fit-content;
-    position: sticky;
-}
-
-.sticky-aside {
-    position: sticky;
-    top: 0;
-    width: 250px;
-    z-index: 999;
-}
-
-.sticky-menu ul {
-    padding-left: 0;
-}
-
-.sticky-menu .nav-link {
-    font-size: 12px;
-    color: #333;
-}
-
-.sticky-menu .nav-link:hover {
-    color: #0d6efd;
-}
-
-/* si tienes un navbar superior fijo */
-.sticky-navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10000;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    z-index: 100;
 }
 
 .menu h5 {
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 15px;
-    color: #0d6efd;
+    margin-top: 0;
+    color: #569CD6;
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #569CD6;
 }
 
 .menu ul {
@@ -230,31 +202,146 @@ a {
 
 .menu ul li a {
     text-decoration: none;
-    color: #333;
+    color: #4a5568;
     font-size: 14px;
-    padding: 6px 10px;
+    padding: 8px 12px;
     display: block;
     border-radius: 6px;
     transition: all 0.3s ease;
+    border-left: 3px solid transparent;
 }
 
 .menu ul li a:hover {
-    background-color: #0d6efd;
-    color: white;
+    background-color: #e2e8f0;
+    color: #569CD6;
+    border-left-color: #569CD6;
 }
 
-.texto {
-    padding-left: 150px;
-    padding-right: 150px;
-    text-align: justify;
+/* Scroll personalizado para el menú */
+.menu::-webkit-scrollbar {
+    width: 6px;
 }
 
-/* ===== FOOTER GENERAL ===== */
+.menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
 
+.menu::-webkit-scrollbar-thumb {
+    background: #569CD6;
+    border-radius: 10px;
+}
+
+.menu::-webkit-scrollbar-thumb:hover {
+    background: #4a90e2;
+}
+
+/* ===== APARTADOS Y CONTENEDORES ===== */
+#apartado1 {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 50px 0 20px 0;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#formulario1 {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tipos {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* ===== SINTAXIS CODE ===== */
+.tag {
+    color: #569CD6;
+}
+
+.attr {
+    color: #9CDCFE;
+}
+
+.value {
+    color: #CE9178;
+}
+
+/* ===== NAVBAR ===== */
+#NavbarCustom {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 15px;
+}
+
+/* ===== ESTRUCTURA SEMÁNTICA ===== */
+.contenedor-semantica {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.grid-semantica {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.item-semantica {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.item-semantica:hover {
+    transform: translateY(-5px);
+}
+
+.item-semantica img {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.item-semantica h3 {
+    margin-bottom: 10px;
+    color: #569CD6;
+}
+
+.descripcion-tipo {
+    font-size: 16px;
+    color: #718096;
+    font-weight: 500;
+}
+
+.contenedor-semantica h2 {
+    color: #2d3748;
+    margin-bottom: 20px;
+}
+
+.img-semantica {
+    height: auto;
+    width: 300px;
+    max-width: 100%;
+}
+
+/* ===== FOOTER ===== */
 .footer {
     background-color: #000;
     color: white;
     padding: 40px 20px;
+    margin-top: 50px;
 }
 
 .footer-container {
@@ -265,18 +352,14 @@ a {
     gap: 40px;
 }
 
-/* Columnas principales */
 .footer-col {
     flex: 1;
 }
 
-/* Separadores verticales */
 .footer-col:not(:last-child) {
     border-right: 1px solid rgba(255, 255, 255, 0.3);
     padding-right: 30px;
 }
-
-/* ===== COLUMNA 1 ===== */
 
 .footer-logo {
     display: flex;
@@ -290,7 +373,7 @@ a {
 
 .footer-title {
     margin: 0;
-    color: #004ecc;
+    color: #569CD6;
 }
 
 .footer-links {
@@ -321,7 +404,9 @@ a {
     transition: 0.3s;
 }
 
-/* ===== COLUMNA 3 ===== */
+.footer-links a:hover {
+    color: #569CD6;
+}
 
 .footer-right h4 {
     margin-bottom: 10px;
@@ -331,356 +416,54 @@ a {
     margin: 5px 0;
 }
 
-/* =====Commit de estructura semántica===== */
-.contenedor-semantica {
-    width: 100%;
-    margin: 10px auto;
-    text-align: center;
-}
-
-.titulo-principal {
-    margin-bottom: 20px;
-}
-
-.descripcion-principal {
-    margin-bottom: 40px;
-    font-size: 18px;
-}
-
-.grid-semantica {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, auto);
-    gap: 30px;
-}
-
-.item-semantica {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.item-semantica img {
-    width: 100%;
-    height: auto;
-    margin: 15px 0;
-    border-radius: 8px;
-}
-
-.item-semantica h3 {
-    margin-bottom: 10px;
-}
-
-.descripcion-tipo {
-    font-size: 20px;
-    color: #555;
-    font-weight: 500;
-}
-
-.contenedor-semantica h2 {
-    color: #f33434;
-}
-
-.contenedor-semantica img {
-    height: auto;
-    width: 300px;
-}
-
-.img-semantica {
-    height: auto;
-    width: 300px;
-}
-
 /* ===== RESPONSIVE DESIGN ===== */
-
-/* Tabletas (768px a 1024px) */
 @media (max-width: 1024px) {
     .contentIndex {
         padding-left: 50px;
     }
 
-    .semititulos {
-        padding-left: 80px;
-        padding-right: 80px;
-        font-size: 26px;
-    }
-
-    .texto {
+    .pad150 {
         padding-left: 80px;
         padding-right: 80px;
     }
 
-    #textoInformativo {
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 14px;
-    }
-
-    .ejemplo {
-        flex-direction: column;
-    }
-
-    .codigo {
-        flex: 1;
-        font-size: 16px;
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
-
-    .resultado {
-        flex: 1;
-        font-size: 18px;
-        margin-right: 0;
-    }
-
-    .informacion {
-        flex: 1;
-        padding-right: 0;
-    }
-
-    .grid-semantica {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .sticky-aside {
-        position: relative;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .footer-col:not(:last-child) {
-        border-right: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        padding-right: 0;
-        padding-bottom: 30px;
-    }
-
-    .fila {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-}
-
-/* Móviles (480px a 767px) */
-@media (max-width: 767px) {
-    header {
-        padding-bottom: 15px;
-        padding-top: 15px;
-    }
-
-    body {
-        font-size: 14px;
-    }
-
-    .contentIndex {
-        margin: 10px;
-        padding-left: 20px;
-        flex-direction: column;
-    }
-
-    .content {
-        margin: 20px;
-    }
-
-    .titulos {
-        font-size: 36px;
-        margin-bottom: 15px;
-    }
-
     .semititulos {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 22px;
-        margin-bottom: 15px;
-    }
-
-    .textoEspecial {
-        font-size: 20px;
-    }
-
-    .textoIndex {
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
-
-    .texto {
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: justify;
-    }
-
-    #textoInformativo {
-        margin-left: 15px;
-        margin-right: 15px;
-        font-size: 13px;
-    }
-
-    #NavbarCustom {
-        font-size: 16px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .ejemplo {
-        flex-direction: column;
-        margin-top: 15px;
-    }
-
-    .codigo {
-        flex: 1;
-        font-size: 14px;
-        padding: 15px;
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
-
-    .resultado {
-        flex: 1;
-        font-size: 16px;
-        padding: 15px;
-        margin-right: 0;
-    }
-
-    .informacion {
-        flex: 1;
-        padding-right: 0;
-    }
-
-    .aside {
-        flex: 1;
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .sticky-aside {
-        position: relative;
-        width: 100%;
-        z-index: unset;
-    }
-
-    .tipos {
-        flex-direction: column;
-        margin-top: 15px;
-    }
-
-    #apartado1 {
-        margin-top: 30px;
-        margin-bottom: 15px;
-        font-size: 14px;
-    }
-
-    #formulario1 {
-        padding: 15px;
-    }
-
-    .grid-semantica {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .item-semantica {
-        padding: 15px;
-    }
-
-    .descripcion-tipo {
-        font-size: 16px;
-    }
-
-    .contenedor-semantica img {
-        width: 200px;
-    }
-
-    .img-semantica {
-        width: 200px;
-    }
-
-    .footer {
-        padding: 30px 15px;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .footer-col:not(:last-child) {
-        border-right: none;
-        padding-right: 0;
-        padding-bottom: 20px;
-    }
-
-    .footer-logo img {
-        width: 80px;
-    }
-
-    .footer-title {
-        font-size: 16px;
-    }
-
-    .fila {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-    .resultadoTitulo {
-        margin-top: -30px;
-    }
-}
-
-/* Móviles muy pequeños (menos de 480px) */
-@media (max-width: 480px) {
-    .titulos {
         font-size: 28px;
     }
 
-    .semititulos {
-        padding-left: 15px;
-        padding-right: 15px;
-        font-size: 18px;
+    .titulos {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contentIndex {
+        padding-left: 20px;
+        flex-direction: column;
     }
 
-    .textoEspecial {
-        font-size: 16px;
+    .menu {
+        position: static;
+        width: 100%;
+        margin-bottom: 30px;
     }
 
-    .textoIndex {
-        font-size: 14px;
+    .pad150, .pad120 {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
-    #NavbarCustom {
-        font-size: 14px;
+    .ejemplo {
+        flex-direction: column;
     }
 
-    .codigo {
-        font-size: 12px;
-        padding: 10px;
+    .codigo, .resultado {
+        flex: none;
+        width: 100%;
     }
 
-    .resultado {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .footer-container {
-        padding: 0;
-    }
-
-    .footer-logo img {
-        width: 60px;
-    }
-
-    .contenedor-semantica img {
-        width: 150px;
-    }
-
-    .img-semantica {
-        width: 150px;
+    .layout {
+        flex-direction: column;
+        gap: 20px;
     }
 }
