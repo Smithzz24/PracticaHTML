@@ -110,8 +110,7 @@
                         </div>
                         <div class="col-md-6">
                             <label for="urlExample" class="form-label">Resultado:</label>
-                            <input type="url" id="urlExample" class="form-control"
-                                placeholder="www.ejemplo.com">
+                            <input type="url" id="urlExample" class="form-control" placeholder="www.ejemplo.com">
                         </div>
                     </div>
 
@@ -291,6 +290,47 @@
                         </div>
                     </div>
                 </div>
+                <h1 class="titulos text-center mt-5" id="ejemplo">Formulario de Registro</h1>
+                <div class="d-flex justify-content-center">
+                    <div class="col-md-6">
+                        <form id="registerForm" class="bg-light p-4 rounded shadow">
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" id="fullName"
+                                    placeholder="Ingresa tu nombre completo" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="tuemail@ejemplo.com"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Crea una contraseña" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+                                <input type="password" class="form-control" id="confirmPassword"
+                                    placeholder="Repite tu contraseña" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="+56 9 1234 5678">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="3"
+                                    placeholder="Deja un mensaje opcional"></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="terms" required>
+                                <label class="form-check-label" for="terms">Acepto los términos y condiciones</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+                        </form>
+                    </div>
+                </div>
             </section>
 
         </section>
@@ -306,6 +346,7 @@
                         <li class="nav-item"><a class="nav-link" href="#checks">Checkbox y radio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#select">Menú desplegable</a></li>
                         <li class="nav-item"><a class="nav-link" href="#range">Rango</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ejemplo">Formulario de Ejemplo</a></li>
                     </ul>
                 </aside>
             </section>
@@ -320,14 +361,15 @@
             document.getElementById("navbar-container").innerHTML = data;
         });
 </script>
-
 <script>
-    fetch('../Funciones/footer.html')
+    fetch("/Funciones/footer.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer-container').innerHTML = data;
         });
 </script>
+
+<script src="/Funciones/script.js"></script>
 
 <div id="footer-container"></div>
 
